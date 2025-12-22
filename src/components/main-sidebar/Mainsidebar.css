@@ -1,0 +1,30 @@
+.main-sidebar{
+    width: 250px;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 0.91px solid rgba(229, 231, 235, 1);
+}
+
+.main-sidebar-links{
+    background-color: rgba(17, 46, 78, 1);
+    color:rgba(255, 255, 255, 1);
+
+}
+
+.main-sidebar-links i,.span-1{
+    color:rgba(255, 255, 255, 1);
+    font-size:16px
+}
+
+.main-sidebar-links .span-2{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-sidebar-links a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.main-sidebar-progressBar{
+    background-color: light;
+    border: 1px white;
+}

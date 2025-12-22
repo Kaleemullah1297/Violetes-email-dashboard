@@ -1,0 +1,25 @@
+.work-information-footer{
+    background-color: rgba(250, 245, 255, 1);
+    border-radius: 14px;
+}
+
+.work-information-footer p{
+    color: rgba(110, 17, 176, 1);
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+.Work-Information-lables label{
+    font-weight: 600;
+    color: rgba(54, 65, 83, 1);
+}
+
+.workInformation-card-icon{
+    background: linear-gradient(0deg, #112E4E, #112E4E);
+    color: rgba(255, 255, 255, 1);
+}
+
+.work-information-span label{
+    font-weight: 600;
+    color: rgba(54, 65, 83, 1);
+}

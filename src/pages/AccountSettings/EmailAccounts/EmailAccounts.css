@@ -1,0 +1,28 @@
+.email-accounts{
+border-left: 3.62px solid rgba(173, 70, 255, 1)
+}
+
+.email-accounts__header{
+    background-color: rgba(250, 245, 255, 1);
+    border-bottom: 0.91px solid rgba(233, 212, 255, 1);
+}
+
+.email-accounts__header h5{
+    color: rgba(89, 22, 139, 1);
+}
+
+.email-accounts__header span{
+    color: rgba(130, 0, 219, 1);
+}
+
+.email-accounts__header i{
+    color: rgba(152, 16, 250, 1)
+}
+
+.email-accounts-button{
+    width:50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color:rgba(236, 236, 240, 1);
+    color:  rgba(113, 113, 130, 1);
+}

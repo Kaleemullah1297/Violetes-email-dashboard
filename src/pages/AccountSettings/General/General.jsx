@@ -1,0 +1,169 @@
+import "./General.css";
+import { useEffect, useState } from "react";
+
+function Security() {
+  const [time, setTime] = useState("time");
+
+  useEffect(() => {
+    console.log(time);
+  }, [time]);
+  return (
+    <>
+      <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 p-5">
+        <div className="security">
+          <div className="mb-5 py-3 d-flex align-items-center security__general-settings-header">
+            <i class="icon-1 fa-regular fa-user me-3 ms-4"></i>
+            <span>
+              <h5 className="m-0 p-0 ">General Settings</h5>
+              <small>Configure your basic prefereces</small>
+            </span>
+          </div>
+          <div className="mx-5 pe-5">
+            <div className="card mb-5 py-4 security__general-settings">
+              <div className="card-body">
+                <div className="text-center">
+                  <i class="icon-2 fa-regular fa-user  mb-3"></i>
+                  <h5 className="card-title fs-3 fw-bold mb-3">
+                    General Settings
+                  </h5>
+                  <small>
+                    Configure your basic account preferences and settings to
+                    personalize
+                    <br /> your Violetis Mail experience
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            {/*Regional Language Preferences*/}
+            <div className="card mb-5 language__preference main-card">
+              <div className="card-body">
+                <div className="mb-5 d-flex align-items-center">
+                  <i class="bi bi-globe icon-2 me-2 icon"></i>
+                  <span>
+                    <h5 className="card-title m-0">
+                      Regional & Language Settings
+                    </h5>
+                    <small>Customize your locale prefereces</small>
+                  </span>
+                </div>
+                <div className="row">
+                  <div className="col-md-6 col-12">
+                    <label htmlFor="" className="form-label">
+                      Language
+                    </label>
+                    <select
+                      className="form-select mb-1"
+                      value={time}
+                      onChange={(e) => setTime(e.target.value)}
+                    >
+                      <option value={time}>Select Time</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                    </select>
+                    <small>Interface language for Violetis Mail</small>
+                  </div>
+                  <div className="col-md-6 col-12">
+                    <label htmlFor="" className="form-label">
+                      Language
+                    </label>
+                    <select className="form-select mb-1">
+                      <option
+                        defaultValue={time}
+                        onChange={(event) => setTime(event.target.value)}
+                      >
+                        Estern Time (UTC-5)
+                      </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                    </select>
+                    <small>
+                      Your preferred time zone for emails and calender
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/*Theme Preferences Reply*/}
+            <div className="card mb-5 p-5 main-card">
+              <div className="card-body">
+                <div className="mb-5 d-flex align-items-center">
+                  <i class="bi bi-globe icon-2 me-2 icon"></i>
+                  <span>
+                    <h5 className="card-title m-0">Apperance & Theme</h5>
+                    <small>Customize your visual experience</small>
+                  </span>
+                </div>
+                <div className="col-md-6 col-12">
+                  <label htmlFor="" className="form-label">
+                    Theme Preference
+                  </label>
+                  <select name="" id="" className="form-select mb-2">
+                    <option defaultValue="system">System Default</option>
+                    <option value="mobile">Mobile</option>
+                  </select>
+                  <small>
+                    Choose how Violetis Mail appears across all your devices
+                  </small>
+                </div>
+                <div className="card mt-5">
+                  <p className="card-title m-0">Adaptive Display</p>
+                  <small>
+                    System default automatically switches between light and
+                    darkmode based on your device settings
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            {/*Auto Reply Settings Card*/}
+            <div className="card mb-5 p-5 main-card">
+              <div className="card-body">
+                <div className="d-flex align-items-center mb-5">
+                  <i className="fa-solid fa-robot me-3 icon"></i>
+                  <span>
+                    <h5 className="card-title m-0">Auto Reply Settings</h5>
+                    <small>Automated responses for when you're away</small>
+                  </span>
+                </div>
+
+                <div className="mb-5">
+                  <div className="d-flex align-items-center justify-content-between">
+                    <label className="form-label m-0">Enable Auto Reply</label>
+                    <div className="form-check form-switch ">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="iconSwitch"
+                        aria-label="Toggle"
+                      />
+                    </div>
+                  </div>
+                  <small>
+                    Send automatic responses when your're away from your inbox
+                  </small>
+                </div>
+
+                <div className="card card-end m-0 p-0">
+                  <div className="card-body d-flex align-items-baseline">
+                    <i className="fa-solid fa-robot me-3"></i>
+                    <span>
+                      <p className="card-title m-0">Smart Auto Reply</p>
+                      <small>
+                        Auto replies are sent only once per sender and won't
+                        respond to newsletters or automated messages.
+                      </small>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Security;

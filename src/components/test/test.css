@@ -1,0 +1,80 @@
+.sidebar-expanded {
+  width: 220px;
+  max-width: 220px;
+  transition: width 0.3s ease;
+}
+
+.sidebar-collapsed {
+  width: 100px;
+  transition: width 0.3s ease;
+}
+
+.sidebar-text {
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.account-settings-sidebar{
+  background-color: white;
+  border: 1px solid black;
+}
+
+.account-settings-sidebar-header h5{
+  font-size: 15px;
+}
+
+.account-settings-list a{
+ color: black;
+}
+
+.nav-link p{
+  font-weight: 600;
+}
+
+/* ACTIVE STATE */
+.account-settings-list li.active {
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.6),0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Change text color when active */
+.account-settings-list li.active a,
+.account-settings-list li.active p,
+.account-settings-list li.active small,
+.account-settings-list li.active i {
+  color: #ffffff;
+}
+
+.account-settings-list li.active {
+  font-size: 15px;
+}
+
+
+.card{
+    border-radius: 16px;
+    padding-top: 24px;
+    padding-right:24px;
+    padding-left: 24px;
+    padding-bottom: 0.91px;
+    background-color:rgba(255, 255, 255, 1);
+    border: rgba(229, 231, 235, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-sttings-sidebar-footer{
+  background-color: rgba(255, 255, 255, 1);
+  border-top: 0.91px solid rgba(229, 231, 235, 0.5);
+  box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar{
+  height: 10px;
+}
+
+
+
+
+
+

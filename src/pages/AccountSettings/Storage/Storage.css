@@ -1,0 +1,22 @@
+.storage-settings{
+    border-left: 3.62px solid rgba(240, 177, 0, 1)
+}
+.storage-settings__header{
+    background-color: rgba(254, 252, 232, 1);
+    border-bottom: 0.91px solid rgba(255, 240, 133, 1)
+}
+
+.storage-settings__header h5{
+   color: rgba(115, 62, 10, 1);
+}
+
+.storage-settings__header small{
+    color: rgba(166, 95, 0, 1);
+}
+
+.storage-settings__header i{
+    color: rgba(208, 135, 0, 1)
+}
+.storage-button{
+    border-color: var(--primary-color);
+}

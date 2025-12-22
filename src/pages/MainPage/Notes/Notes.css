@@ -1,0 +1,11 @@
+.notes__button{
+    background-color: var(--primary-color);
+    color:var(--buttton-text);
+    border-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.card-title{
+    color: var(--text-color2);
+}
+

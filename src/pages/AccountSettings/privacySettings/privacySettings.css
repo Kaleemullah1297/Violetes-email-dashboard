@@ -1,0 +1,32 @@
+.privacy-settings{
+border-left: 3.62px solid rgba(0, 184, 219, 1)
+}
+
+.privacy-settings label{
+    font-weight: 600;
+}
+
+.privacy-settings__header{
+    background-color: rgba(236, 254, 255, 1);
+    border-bottom: 0.91px solid rgba(162, 244, 253, 1)
+}
+
+.privacy-settings__header h5{
+    color: rgba(16, 78, 100, 1);
+}
+
+.privacy-settings__header small{
+    color: rgba(0, 117, 149, 1);
+}
+
+.privacy-settings__header i{
+    color: rgba(0, 146, 184, 1)
+}
+
+.privacy-settings hr{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.form-check :active-view-transition{
+    border-color:var(--primary-color);
+}
