@@ -150,16 +150,18 @@ function Features() {
         </div>
 
         {/*Footer*/}
-        <div className="card">
-          <div className="card-body m-0 p-0 p-3 d-flex justify-content-between">
-            <span>
-              <h6 className="card-title m-0 p-0">Unlock Premium Ai Features</h6>
-              <small>
-                Get unlimited AI actions, advanced analytics, and priority
-                support
-              </small>
-            </span>
-            <button className="btn">Upgrade Now</button>
+        <div className="card features-component-footer  mb-5">
+          <div className="card-body m-0 p-0 pb-3 d-flex align-items-center justify-content-between">
+              <span>
+                <h6 className="card-title m-0 p-0">
+                  Unlock Premium AI Features
+                </h6>
+                <small>
+                  Get unlimited AI actions, advanced analytics, and priority
+                  support
+                </small>
+              </span>
+              <button className="btn">Upgrade Now</button>
           </div>
         </div>
       </div>

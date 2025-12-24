@@ -6,7 +6,7 @@ function ProgressBar({ progress }) {
       style={{
         background: "#e0e0e0",
         borderRadius: "8px",
-        height: "15px",
+        height: "10px",
         width: "100%",
       }}
     >

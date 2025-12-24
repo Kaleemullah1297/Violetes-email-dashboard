@@ -55,3 +55,22 @@
     background-color: rgba(243, 232, 255, 1);
     color:  rgba(130, 0, 219, 1);
 }
+
+.features-component-footer{
+    background: linear-gradient(90deg, rgba(17, 46, 78, 0.05) 0%, rgba(30, 58, 95, 0.05) 100%);
+    border: 2px solid rgba(17, 46, 78, 1)
+}
+
+.features-component-footer button{
+    background-color: rgba(17, 46, 78, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.features-component-footer h6{
+    color: rgba(10, 10, 10, 1);
+    font-weight: 700;
+}
+
+.features-component-footer small{
+    color: rgba(113, 113, 130, 1);
+}

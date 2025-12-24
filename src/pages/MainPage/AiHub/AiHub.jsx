@@ -1,5 +1,7 @@
 import Features from "../../../components/AiHub/Features";
+import Insights from "../../../components/AiHub/Insights/Insights";
 import QuickActions from "../../../components/AiHub/QuickActions/QuickAction";
+import Settings from "../../../components/AiHub/Settings/Settings";
 import "./AiHub.css";
 
 function AiHub() {
@@ -108,11 +110,11 @@ function AiHub() {
             </div>
 
             <div className="tab-pane fade" id="insights">
-              <h1>Insights</h1>
+              <Insights />
             </div>
 
             <div className="tab-pane fade" id="settings">
-              <h1>Settings</h1>
+              <Settings />
             </div>
           </div>
         </div>
