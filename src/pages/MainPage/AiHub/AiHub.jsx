@@ -1,50 +1,118 @@
+import Features from "../../../components/AiHub/Features";
+import QuickActions from "../../../components/AiHub/QuickActions/QuickAction";
 import "./AiHub.css";
 
 function AiHub() {
   return (
     <>
-      <div className="ai-hub container">
-        <div className="pb-5">
-          <div className="mb-4 pt-4">
+      <div className="ai-hub">
+        <div className=" ai-hub-header px-3 mb-4 pb-3">
+          <div className="mb-4 pt-4 mx-3 top">
             <h3 className="p-0 m-0">AI Hub</h3>
             <small>Your Intelligence Email Assistant</small>
           </div>
 
-          <div className="row g-2 mx-2">
+          <div className="row g-3 mx-2 bottom">
             <div className="col-3">
-              <div className="card">
-                <div className="card-body p-0">
-                  <p className="card-title ms-2">AI Actions Today</p>
-                  <h2>257</h2>
+              <div className="card m-0 p-0  p-2">
+                <div className="card-body p-0 m-0 ps-2">
+                  <small className="card-title">AI Actions Today</small>
+                  <h3>257</h3>
                 </div>
               </div>
             </div>
 
             <div className="col-3">
-              <div className="card">
-                <div className="card-body p-0">
-                  <p className="card-title">Time Saved</p>
-                  <h2>257</h2>
+              <div className="card m-0 p-0  p-2">
+                <div className="card-body p-0 m-0 ps-2">
+                  <small className="card-title">Time Saved</small>
+                  <h3>257</h3>
                 </div>
               </div>
             </div>
 
             <div className="col-3">
-              <div className="card">
-                <div className="card-body p-0">
-                  <p className="card-title">Emails Sorted</p>
-                  <h2>257</h2>
+              <div className="card m-0 p-0  p-2">
+                <div className="card-body p-0 m-0 ps-2">
+                  <small className="card-title">Emails Sorted</small>
+                  <h3>257</h3>
                 </div>
               </div>
             </div>
 
             <div className="col-3">
-              <div className="card">
-                <div className="card-body p-0">
-                  <p className="card-title">Ai accuracy</p>
-                  <h2>257</h2>
+              <div className="card m-0 p-0  p-2">
+                <div className="card-body p-0 m-0 ps-2">
+                  <small className="card-title">Ai accuracy</small>
+                  <h3>257</h3>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4">
+          <ul className="nav nav-pills ai-hub-tabs">
+            <li className="nav-item">
+              <button
+                className="nav-link active d-flex align-items-center gap-2"
+                data-bs-toggle="tab"
+                data-bs-target="#features"
+              >
+                <i className="bi bi-lightning-charge"></i>
+                <span>Features</span>
+              </button>
+            </li>
+
+            <li className="nav-item">
+              <button
+                className="nav-link d-flex align-items-center gap-2"
+                data-bs-toggle="tab"
+                data-bs-target="#quick-actions"
+              >
+                <i className="bi bi-lightning-charge"></i>
+                <span>Quick Actions</span>
+              </button>
+            </li>
+
+            <li className="nav-item">
+              <button
+                className="nav-link d-flex align-items-center gap-2"
+                data-bs-toggle="tab"
+                data-bs-target="#insights"
+              >
+                <i className="bi bi-lightning-charge"></i>
+                <span>Insights</span>
+              </button>
+            </li>
+
+            <li className="nav-item">
+              <button
+                className="nav-link d-flex align-items-center gap-2"
+                data-bs-toggle="tab"
+                data-bs-target="#settings"
+              >
+                <i className="bi bi-gear"></i>
+                <span>Settings</span>
+              </button>
+            </li>
+          </ul>
+
+          <div className="tab-content py-3 mt-2">
+            <div className="tab-pane fade show active" id="features">
+              <Features />
+            </div>
+
+            <div className="tab-pane fade" id="quick-actions">
+              <QuickActions />
+            </div>
+
+            <div className="tab-pane fade" id="insights">
+              <h1>Insights</h1>
+            </div>
+
+            <div className="tab-pane fade" id="settings">
+              <h1>Settings</h1>
             </div>
           </div>
         </div>

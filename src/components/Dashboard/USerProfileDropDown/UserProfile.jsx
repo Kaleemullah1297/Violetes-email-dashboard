@@ -19,8 +19,8 @@ function UserProfileDropdown() {
         >
           <img src={user.image} alt="User avatar" className="rounded-circle me-2" />
           <div className="text-start d-flex flex-column">
-            <small className="p-0 m-0 fw-semibold">{user.name}</small>
-            <small className="text-muted p-0 m-0">{user.email}</small>
+            <small className="p-0 m-0 fw-semibold lh-1">{user.name}</small>
+            <small className="text-muted p-0 m-0 lh-1">{user.email}</small>
           </div>
         </button>
         <i

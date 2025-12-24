@@ -1,4 +1,55 @@
-.ai-hub{
+.ai-hub-header{
     background: var(--primary-color-mainpage);
-    color: var(--buttton-text);
+}
+
+.ai-hub-header .top h3{
+  color: var(--buttton-text);
+}
+
+.ai-hub-header .top small{
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ai-hub-header small{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ai-hub-header .col-3 .card{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.91px solid rgba(255, 255, 255, 0.2)
+}
+
+.ai-hub-header .col-3 h3{
+  color: rgba(255, 255, 255, 1);
+}
+
+.ai-hub-tabs {
+  background-color:  rgba(236, 236, 240, 1);
+  padding: 4px;
+  border-radius: 999px;
+  display: flex;
+  gap: 6px;
+}
+
+.ai-hub-tabs .nav-link {
+  border-radius: 999px;
+  padding: 5px 80px;
+  color: #6b7280;
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.ai-hub-tabs .nav-link i {
+  font-size: 16px;
+}
+
+.ai-hub-tabs .nav-link.active {
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.ai-hub-tabs .nav-link:hover {
+  color: #111827;
 }

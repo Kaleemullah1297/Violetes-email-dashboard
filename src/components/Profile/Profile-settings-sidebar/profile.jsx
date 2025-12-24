@@ -1,145 +1,175 @@
-import "./profile.css";
-import reactLogo from "../../../assets/react.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import "../../test/test.css";
+import ProgressBar from "../../ProgressBar/ProgressBar";
+import "./profile.css";
 
 function ProfileSettingsSidebar() {
+  const [activeItem, setActiveItem] = useState("general");
+
   return (
     <>
-      <div className="col-3 sidebar-main-div justify-content-center">
-        {/* SIDEBAR TOP SECTION */}
-        <div className="sidebar-top">
-          <span className="d-flex">
-            <i className="bi bi-circle-fill me-3"></i>
-            <p className="sidebar-top-p1 fw-bold lh-">PROFILE SECTIONS</p>
-          </span>
-          <small className="sidebar-top-p2">
-            Manage your professional profile
-          </small>
-        </div>
+      {/*Just for the large screen only*/}
+      <div className="d-flex  account-settings-sidebar">
+        <div className="text-color-white" style={{ width: "250px" }}>
+          <div className="mb-3 account-settings-sidebar-header">
+            <div className="d-flex align-items-baseline ms-4 ">
+              <span className="account-settings-sidebar-header-icon">
+                <i className="fa-solid fa-circle fa-2xs me-1"></i>
+              </span>
+              <h5 className="mt-4 m-1 fw-bold">PROFILE SECTIONS</h5>
+            </div>
+            <small className="ms-4">Manage your professional profile</small>
+          </div>
 
-        {/* SIDEBAR LINKS */}
-        <nav className="nav">
-          <ul className="list-unstyled">
-            <li className="nav-item mb-2">
-              <Link to="/profile/personal-info" className="nav-link d-flex">
-                <span className=" align-self-center me-4">
-                  <i className="bi bi-person-circle"></i>
-                </span>
-                <span>
-                  <h5 className="sidebar-h5">Personal Info</h5>
-                  <small className="sidebar-para-2">
-                    Basic details & avator
-                  </small>
-                </span>
-              </Link>
-            </li>
+          {/* Menu */}
+          <div>
+            <ul
+              className="nav py-2 account-settings-list d-flex flex-grow-1 align-items-center ms-3"
+              style={{ width: "220px" }}
+            >
+              <li
+                className={`test-li nav-item d-flex align-items-center mb-3 ps-1 w-100 py-2 ${
+                  activeItem === "general" ? "active" : ""
+                }`}
+                onClick={() => setActiveItem("general")}
+              >
+                <Link
+                  to="/profile/personal-info"
+                  className="nav-link active d-flex align-items-center text-dark"
+                >
+                  <i className="fa-regular fa-user me-3"></i>
+                  <span>
+                    <p className="p-0 m-0">Personal Info</p>
+                    <small>Basic details & avator</small>
+                  </span>
+                  {activeItem === "general" && (
+                    <i className="fa-solid fa-chevron-right fa-xs ms-3"></i>
+                  )}
+                </Link>
+              </li>
 
-            <li className="nav-item">
-              <Link to="/profile/contact-details" className="nav-link d-flex">
-                <span className=" align-self-center me-4">
-                  <i className="bi bi-telephone"></i>
-                </span>
-                <span>
-                  <h5 className="sidebar-h5">Contact Details</h5>
-                  <small className="sidebar-para-2">
-                    Phone & working hours
-                  </small>
-                </span>
-              </Link>
-            </li>
+              <li
+                className={`test-li nav-item d-flex align-items-center mb-3 ps-1 w-100 py-2 ${
+                  activeItem === "security" ? "active" : ""
+                }`}
+                onClick={() => setActiveItem("security")}
+              >
+                <Link
+                  to="/profile/contact-details"
+                  className="nav-link active d-flex align-items-center text-dark"
+                >
+                  <i class="bi bi-telephone me-3"></i>
+                  <span>
+                    <p className="p-0 m-0">Contact Details </p>
+                    <small className="text-xs">Phone & Working hours</small>
+                  </span>
+                  {activeItem === "security" && (
+                    <i className="fa-solid fa-chevron-right fa-xs ms-2"></i>
+                  )}
+                </Link>
+              </li>
 
-            <li className="nav-item">
-              <Link to="/profile/work-information" className="nav-link d-flex">
-                <span className=" align-self-center me-4">
-                  <i className="fa-solid fa-user"></i>
-                </span>
-                <span>
-                  <h5 className="sidebar-h5">Work Information</h5>
-                  <small className="sidebar-para-2">Job title & company</small>
-                </span>
-              </Link>
-            </li>
+              <li
+                className={`test-li nav-item d-flex align-items-center mb-3 ps-1 w-100 py-2 ${
+                  activeItem === "email" ? "active" : ""
+                }`}
+                onClick={() => setActiveItem("email")}
+              >
+                <Link
+                  to="/profile/work-information"
+                  className="nav-link active d-flex align-items-center text-dark"
+                >
+                  <i class="bi bi-building me-3"></i>
+                  <span>
+                    <p className="p-0 m-0">Work Information</p>
+                    <small>Job title & company</small>
+                  </span>
+                  {activeItem === "email" && (
+                    <i className="fa-solid fa-chevron-right fa-xs ms-1"></i>
+                  )}
+                </Link>
+              </li>
 
-            <li className="nav-item">
-              <Link to="/profile/display-settings" className="nav-link d-flex">
-                <span className=" align-self-center me-4">
-                  <i className="fa-solid fa-user"></i>
-                </span>
-                <span>
-                  <h5 className="sidebar-h5">Display Settings</h5>
-                  <small className="sidebar-para-2">
-                    Appearance Preferences
-                  </small>
-                </span>
-              </Link>
-            </li>
+              <li
+                className={`test-li nav-item d-flex align-items-center mb-3 ps-1 w-100 py-2 ${
+                  activeItem === "notifications" ? "active" : ""
+                }`}
+                onClick={() => setActiveItem("notifications")}
+              >
+                <Link
+                  to="/profile/display-settings"
+                  className="nav-link active d-flex align-items-center text-dark"
+                >
+                  <i class="bi bi-palette me-3"></i>
+                  <span>
+                    <p className="p-0 m-0">Display Settings</p>
+                    <small>Appearence prefrences</small>
+                  </span>
+                  {activeItem === "notifications" && (
+                    <i className="fa-solid fa-chevron-right fa-xs ms-2"></i>
+                  )}
+                </Link>
+              </li>
 
-            <li className="nav-item">
-              <Link to="/profile/email-signatures" className="nav-link d-flex">
-                <span className=" align-self-center me-4">
-                  <i className="bi bi-pen"></i>
+              <li
+                className={`test-li nav-item d-flex align-items-center mb-3 ps-1 w-100 py-2 ${
+                  activeItem === "privacy" ? "active" : ""
+                }`}
+                onClick={() => setActiveItem("privacy")}
+              >
+                <Link
+                  to="/profile/email-signatures"
+                  className="nav-link active d-flex align-items-center text-dark"
+                >
+                  <i className="bi bi-eye me-3"></i>
+                  <span>
+                    <p className="p-0 m-0">Email Signatures</p>
+                    <small>Signature management</small>
+                  </span>
+                  {activeItem === "privacy" && (
+                    <i className="fa-solid fa-chevron-right fa-xs ms-4"></i>
+                  )}
+                </Link>
+              </li>
+
+              <li
+                className={`test-li nav-item d-flex align-items-center mb-3 ps-1 w-100 py-2 ${
+                  activeItem === "storage" ? "active" : ""
+                }`}
+                onClick={() => setActiveItem("storage")}
+              >
+                <Link
+                  to="/profile/social-links"
+                  className="nav-link active d-flex align-items-center text-dark"
+                >
+                  <i className="bi bi-globe fs-5 me-3"></i>
+                  <span>
+                    <p className="p-0 m-0">Social Links</p>
+                    <small className="xs">Professional networks</small>
+                  </span>
+                  {activeItem === "storage" && (
+                    <i className="fa-solid fa-chevron-right fa-xs"></i>
+                  )}
+                </Link>
+              </li>
+            </ul>
+
+            <div className=" card mx-3 account-sttings-sidebar-footer m-4 p-4">
+              <div className="card-body m-0 p-0">
+                <p className="card-title text-center">Data Storage</p>
+                <div className="d-flex justify-content-between mb-2">
+                  <small>Storage Used</small>
+                  <small>56%</small>
+                </div>
+                <span className="progress-bar">
+                  <ProgressBar />
                 </span>
-                <span>
-                  <h5 className="sidebar-h5">Email Signatures</h5>
-                  <small className="sidebar-para-2">Signature management</small>
-                </span>
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/profile/social-links" className="nav-link d-flex">
-                <span className=" align-self-center me-4">
-                  <i className="bi bi-globe2"></i>
-                </span>
-                <span>
-                  <h5 className="sidebar-h5">Socail Links</h5>
-                  <small className="sidebar-para-2">
-                    Professional Networks
-                  </small>
-                </span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* CARD  */}
-        <div className="mt-4">
-          <div className="row d-flex justify-content-center">
-            <div className="card">
-              {/*CARD IMAGE */}
-
-              <img
-                src={reactLogo}
-                alt=""
-                className="card-img-top mt-4"
-                id="card-img"
-              />
-
-              {/*CARD BODY */}
-
-              <div className="card-body  text-center">
-                <h5>John Doe</h5>
-                <p>Senior Manager</p>
-                <p>johnDoe@gmail.com</p>
-                <div>
-                  <p>Available: 09:00-17:00</p>
-                  <p>5 working days/week</p>
+                <div className="d-flex justify-content-between mt-2">
+                  <small>8.4 GB</small>
+                  <small>15 GB</small>
                 </div>
                 <hr />
-                <p>Profile 83% complete</p>
-
-                {/* CARD LAST TEXT*/}
-
-                <div className="d-flex justify-content-between">
-                  <span>
-                    <p className="text-center">Signatures</p>
-                    <p className="text-center">3</p>
-                  </span>
-                  <span>
-                    <p className="text-center">Social Links</p>
-                    <p className="text-center">0</p>
-                  </span>
-                </div>
               </div>
             </div>
           </div>

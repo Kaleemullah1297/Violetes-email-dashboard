@@ -3,6 +3,10 @@
     border-bottom: 0.91px solid rgba(0, 0, 0, 0.1)
 }
 
+.dashboard-navbar ul{
+    display:flex-nowrap;
+}
+
 .filter-button{
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(0, 0, 0, 0.1)
@@ -18,4 +22,15 @@
 .link-image{
     background-color:  rgba(17, 46, 78, 1);
     color: rgba(255, 255, 255, 1);
+}
+
+.focus{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.profile-icon{
+    background-color: rgba(17, 46, 78, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 36px;
+    height: 36px;
 }

@@ -25,7 +25,7 @@ function Notifications() {
             <div className="d-flex justify-content-between mb-4">
               <div>
                 <label htmlFor="" className="form-label d-block m-0 p-0">
-                  Email Notifications
+                  <h6>Email Notifications</h6>
                 </label>
                 <small className=" m-0 p-0">
                   Receive notifications via email
@@ -46,7 +46,7 @@ function Notifications() {
             <div className="d-flex justify-content-between mb-4">
               <div>
                 <label htmlFor="" className="form-label d-block m-0 p-0">
-                  Desktop Notifications
+                  <h6>Desktop Notifications</h6>
                 </label>
                 <small className=" m-0 p-0">Show browser notifications</small>
               </div>
@@ -65,7 +65,7 @@ function Notifications() {
             <div className="d-flex justify-content-between mb-4">
               <div>
                 <label htmlFor="" className="form-label d-block m-0 p-0">
-                  Mobile Push Notifications
+                  <h6>Mobile Push Notifications</h6>
                 </label>
                 <small className=" m-0 p-0">
                   Receive push notifications on mobile
@@ -86,7 +86,7 @@ function Notifications() {
             <div className="d-flex justify-content-between mb-4">
               <div>
                 <label htmlFor="" className="form-label d-block m-0 p-0">
-                  Sound Notifications
+                  <h6>Sound Notifications</h6>
                 </label>
                 <small className=" m-0 p-0">Play sound for new messages</small>
               </div>
@@ -99,9 +99,9 @@ function Notifications() {
                 />
               </div>
             </div>
-            </div>
           </div>
         </div>
+      </div>
     </>
   );
 }

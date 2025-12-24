@@ -9,7 +9,7 @@ function Security() {
   }, [time]);
   return (
     <>
-      <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 p-5">
+      <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
         <div className="security">
           <div className="mb-5 py-3 d-flex align-items-center security__general-settings-header">
             <i class="icon-1 fa-regular fa-user me-3 ms-4"></i>
@@ -18,7 +18,7 @@ function Security() {
               <small>Configure your basic prefereces</small>
             </span>
           </div>
-          <div className="mx-5 pe-5">
+          <div className="mx-sm-5 mx-4 pe-sm-2 pe-0">
             <div className="card mb-5 py-4 security__general-settings">
               <div className="card-body">
                 <div className="text-center">
@@ -36,7 +36,7 @@ function Security() {
             </div>
 
             {/*Regional Language Preferences*/}
-            <div className="card mb-5 language__preference main-card">
+            <div className="card mb-5  pb-3 language__preference main-card">
               <div className="card-body">
                 <div className="mb-5 d-flex align-items-center">
                   <i class="bi bi-globe icon-2 me-2 icon"></i>
@@ -50,7 +50,7 @@ function Security() {
                 <div className="row">
                   <div className="col-md-6 col-12">
                     <label htmlFor="" className="form-label">
-                      Language
+                      <h6>Language</h6>
                     </label>
                     <select
                       className="form-select mb-1"
@@ -64,8 +64,8 @@ function Security() {
                     <small>Interface language for Violetis Mail</small>
                   </div>
                   <div className="col-md-6 col-12">
-                    <label htmlFor="" className="form-label">
-                      Language
+                    <label htmlFor="" className="form-label ">
+                      <h6>Time Zone</h6>
                     </label>
                     <select className="form-select mb-1">
                       <option
@@ -86,18 +86,19 @@ function Security() {
             </div>
 
             {/*Theme Preferences Reply*/}
-            <div className="card mb-5 p-5 main-card">
+            <div className="card mb-5 main-card">
               <div className="card-body">
                 <div className="mb-5 d-flex align-items-center">
-                  <i class="bi bi-globe icon-2 me-2 icon"></i>
+                  <i class="bi bi-palette me-2 icon"></i>
                   <span>
                     <h5 className="card-title m-0">Apperance & Theme</h5>
                     <small>Customize your visual experience</small>
                   </span>
                 </div>
-                <div className="col-md-6 col-12">
+
+                <div className="col-md-6 col-12 mb-5">
                   <label htmlFor="" className="form-label">
-                    Theme Preference
+                    <h6>Theme Preference</h6>
                   </label>
                   <select name="" id="" className="form-select mb-2">
                     <option defaultValue="system">System Default</option>
@@ -107,21 +108,26 @@ function Security() {
                     Choose how Violetis Mail appears across all your devices
                   </small>
                 </div>
-                <div className="card mt-5">
-                  <p className="card-title m-0">Adaptive Display</p>
-                  <small>
-                    System default automatically switches between light and
-                    darkmode based on your device settings
-                  </small>
+                <div className="card card-end m-0 p-0">
+                  <div className="card-body d-flex align-items-baseline">
+                    <i className="bi bi-palette me-2"></i>
+                    <span>
+                      <h6 className="card-title m-0">Adaptive Display</h6>
+                      <small>
+                        System Default automatically switches between light and
+                        dark modes based on your device settings.
+                      </small>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/*Auto Reply Settings Card*/}
-            <div className="card mb-5 p-5 main-card">
+            <div className="card mb-5 main-card">
               <div className="card-body">
                 <div className="d-flex align-items-center mb-5">
-                  <i className="fa-solid fa-robot me-3 icon"></i>
+                  <i className="fa-solid fa-robot me-2 icon"></i>
                   <span>
                     <h5 className="card-title m-0">Auto Reply Settings</h5>
                     <small>Automated responses for when you're away</small>
@@ -130,7 +136,9 @@ function Security() {
 
                 <div className="mb-5">
                   <div className="d-flex align-items-center justify-content-between">
-                    <label className="form-label m-0">Enable Auto Reply</label>
+                    <label className="form-label m-0">
+                      <h6>Enable Auto Reply</h6>
+                    </label>
                     <div className="form-check form-switch ">
                       <input
                         className="form-check-input"
@@ -147,9 +155,9 @@ function Security() {
 
                 <div className="card card-end m-0 p-0">
                   <div className="card-body d-flex align-items-baseline">
-                    <i className="fa-solid fa-robot me-3"></i>
+                    <i className="fa-solid fa-robot me-2"></i>
                     <span>
-                      <p className="card-title m-0">Smart Auto Reply</p>
+                      <h6 className="card-title m-0">Smart Auto Reply</h6>
                       <small>
                         Auto replies are sent only once per sender and won't
                         respond to newsletters or automated messages.

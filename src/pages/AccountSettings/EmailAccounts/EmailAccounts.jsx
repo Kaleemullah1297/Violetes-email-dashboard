@@ -27,7 +27,8 @@ function EmailAccounts() {
             <div className="mb-5 d-flex align-items-center justify-content-between">
               <span>
                 <h5>Connected Email Accounts</h5>
-                <small>Manage connected email accounts and sync settings</small>
+                <small className="d-sm-block d-none">Manage your connected email accounts and sync settings</small>
+                <small className="d-block d-sm-none">Manage your connected<br/> email accounts and sync settings</small>
               </span>
               <Button text="Add Account" />
             </div>
@@ -50,17 +51,27 @@ function EmailAccounts() {
           <div className="ms-4 me-2  mb-5">
             <div className="card">
               <div className="card-body">
-                <div className="d-flex">
-                  <i class="bi bi-arrow-90deg-right me-2 fw-bold"></i>
-                  <h5 className="card-title m-0 p-0">Email Forwarding</h5>
+                <div className="d-flex justify-content-between">
+                  <span>
+                    <i class="bi bi-arrow-90deg-right me-2 fw-bold"></i>
+                    <h5 className="card-title m-0 p-0 d-inline">Email Forwarding</h5>
+                  </span>
+                  <div className="form-check form-switch ">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="iconSwitch"
+                      aria-label="Toggle"
+                    />
+                  </div>
                 </div>
                 <small>
                   Automatically forward incomming emails to another address
                 </small>
 
-                <span className="d-flex">
+                <span className="d-flex mt-4">
                   <input type="text" className="form-control" />
-                  <button className="btn  ms-5 px-4" type="button">
+                  <button className="btn  ms-2 px-4" type="button">
                     Save
                   </button>
                 </span>

@@ -1,0 +1,16 @@
+.quick-actions .card{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.quick-actions .icon-1{
+    background: linear-gradient(135deg, #112E4E 0%, #1E3A5F 100%);
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 1);
+    width: 55px;
+    max-width: 55px;
+    min-width: 30px;
+    height: 55px;
+    max-height: 55px;
+    min-height: 30px;
+    border-radius: 12px;
+}

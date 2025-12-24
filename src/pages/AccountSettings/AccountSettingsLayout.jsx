@@ -18,6 +18,7 @@ function AccountSettingsLayout() {
           <Test />
           <div className="flex-grow-1 m-0">
             <Routes>
+              <Route index element={<General />} />
               <Route path="general" element={<General />}></Route>
               <Route path="security" element={<SecurityAndPrivacy />}></Route>
               <Route path="email-accounts" element={<EmailAccounts />}></Route>
