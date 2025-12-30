@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./Mainsidebar.css";
 import logo from "../../assets/logo.png";
-import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import ProgressBar from "../ProgressBar/ProgressBar";
+import DarkThemeContext from "../../context/DarkThemeContext";
 
 function MainSidebar() {
+  const { theme, toggleTheme } = useContext(DarkThemeContext);
   return (
     <>
       <div className="main-sidebar">
@@ -14,75 +17,76 @@ function MainSidebar() {
         <div className="main-sidebar-links">
           <ul className="nav  mx-1">
             <li className="nav-item w-100 mb-1 mt-2">
-              <a
-                href="#"
+              <NavLink
+                to="/dashboard/inbox"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-regular fa-envelope me-3"></i>
                 <span className="span-1">Inbox</span>
                 <span className=" ms-auto span-2">12</span>
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <a
-                href="#"
+              <NavLink
+                to="/dashboard/sent-items"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-regular fa-paper-plane me-3"></i>
                 <span className="span-1">Sent Items</span>
                 <span className=" ms-auto span-2">12</span>
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <a
-                href="#"
+              <NavLink
+                to="/dashboard/drafts"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-regular fa-envelope me-3"></i>
                 <span className="span-1">Drafts</span>
                 <span className=" ms-auto span-2">12</span>
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <a
-                href="#"
+              <NavLink
+                to="/dashboard/deleted-items"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-regular fa-trash-can me-3"></i>
                 <span className="span-1">Deleted Items</span>
                 <span className=" ms-auto span-2">12</span>
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <a
-                href="#"
+              <NavLink
+                to="/dashboard/archieve"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="bi bi-archive me-3"></i>
                 <span className="span-1">Archieve</span>
                 <span className=" ms-auto span-2">12</span>
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <a
-                href="#"
+              <NavLink
+                to="/dashboard/junk-emails"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-regular fa-flag me-3"></i>
                 <span className="span-1">Junk Emails</span>
                 <span className=" ms-auto span-2">12</span>
-              </a>
+              </NavLink>
             </li>
 
             {/*Calender*/}
 
             <li className="nav-item w-100 mb-1">
-              <NavLink to="/dashboard/calender"
+              <NavLink
+                to="/dashboard/calender"
                 href="#"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
@@ -93,7 +97,8 @@ function MainSidebar() {
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <NavLink to="/dashboard/people"
+              <NavLink
+                to="/dashboard/people"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="bi bi-people me-3"></i>
@@ -103,7 +108,8 @@ function MainSidebar() {
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <NavLink to="/dashboard/tasks"
+              <NavLink
+                to="/dashboard/tasks"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-regular fa-envelope me-3"></i>
@@ -113,7 +119,8 @@ function MainSidebar() {
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <NavLink to="/dashboard/notes"
+              <NavLink
+                to="/dashboard/notes"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-regular fa-file-lines me-3"></i>
@@ -123,7 +130,8 @@ function MainSidebar() {
             </li>
 
             <li className="nav-item w-100 mb-1">
-              <NavLink to='/dashboard/newsletters'
+              <NavLink
+                to="/dashboard/newsletters"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-solid fa-rss me-3"></i>
@@ -137,7 +145,8 @@ function MainSidebar() {
             </label>
 
             <li className="nav-item w-100 mb-1">
-              <NavLink to='/dashboard/ai-hub'
+              <NavLink
+                to="/dashboard/ai-hub"
                 className="nav-link d-flex flex-row align-items-baseline"
               >
                 <i className="fa-solid fa-rss me-3"></i>
@@ -162,7 +171,18 @@ function MainSidebar() {
 
           <hr />
 
-          <label className="form-label ms-3">Dark Mode</label>
+          <div className="d-flex justify-content-between">
+            <label className="form-label ms-3">Dark Mode</label>
+            <div className="form-check form-switch ">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="iconSwitch"
+                checked={theme === "dark"}
+                onChange={toggleTheme}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -3,7 +3,7 @@ import TasksComponent from "../../../components/LeftBar/Tasks/Tasks";
 function TaskPage() {
   return (
     <>
-      <div>
+      <div className="taskbar-page">
         <TasksComponent/>
       </div>
     </>

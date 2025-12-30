@@ -1,15 +1,23 @@
 :root {
   --font-family-base: "Albert Sans", sans-serif;
+  --bg-color: rgb(255, 255, 255);
+  --text-color: #333333;
+  --input-bg: rgba(243, 243, 245, 1);
+}
+
+body.dark {
+  --bg-color: #1f1f1f;
+  --text-color: #f0f0f0;
 }
 
 body {
   font-family: var(--font-family-base);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-input.form-control{
-  background-color: rgba(243, 243, 245, 1);
+input.form-control {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: #ccc; /* optional */
 }
-
-
-
-

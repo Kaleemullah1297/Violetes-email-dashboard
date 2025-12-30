@@ -1,12 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useContext } from "react";
 import ProfileLayout from "./pages/Profile/ProfileLayout";
 import AccountSettingsLayout from "./pages/AccountSettings/AccountSettingsLayout";
 import MainPageLayout from "./pages/MainPage/MainPageLayout";
-//import TestPage from "./pages/test";
+import DarkThemeState from "./context/DarkTheme.jsx";
+import DarkThemeContext from "./context/DarkThemeContext";
 
-function App() {
+function AppContent() {
+  const { theme } = useContext(DarkThemeContext);
+
   return (
-    <>
+    <div className={`app-root ${theme}`}>
       <Router>
         <Routes>
           <Route path="/dashboard/*" element={<MainPageLayout />} />
@@ -17,7 +21,15 @@ function App() {
           <Route path="/profile/*" element={<ProfileLayout />} />
         </Routes>
       </Router>
-    </>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <DarkThemeState>
+      <AppContent />
+    </DarkThemeState>
   );
 }
 

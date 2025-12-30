@@ -6,9 +6,17 @@
   --text-color2: rgba(10, 10, 10, 1);
   --buttton-text:rgba(255, 255, 255, 1);
 
-  
-  --primary-color-mainpage:linear-gradient(180deg, #112E4E 0%, #1E3A5F 100%);
+  /*Page Navbar*/
 
+  --bg-navbar-page: linear-gradient(180deg, #112E4E 0%, #1E3A5F 100%);
+  
+
+  --text-navbar-page: rgba(255, 255, 255, 1);
+  --text-navbar-page: rgba(255, 255, 255, 0.8);
+
+  --border-image-container-page: rgba(255, 255, 255, 0.2);
+
+  --button-text-page: rgba(17, 46, 78, 1);
 }
 
 
