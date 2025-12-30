@@ -7,7 +7,7 @@ function Import() {
         <div className="div import-settings">
           {/*Main Header*/}
           <div className="mb-4 py-3 d-flex align-items-center import-settings__header">
-            <i class="bi bi-download icon-1 fs-5 me-3 ms-4"></i>
+            <i className="bi bi-download icon-1 fs-5 me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">Import & Export</h5>
               <small>Transfer your data securely</small>
@@ -147,7 +147,7 @@ function Import() {
                   <div className="card-body m-0 p-0 ps-1 d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center">
                       <span>
-                        <i class="fa-regular fa-file-lines fs-3 me-3"></i>
+                        <i className="fa-regular fa-file-lines fs-3 me-3"></i>
                       </span>
                       <span>
                         <p className="card-title m-0 p-0">Import from Files</p>
@@ -210,7 +210,7 @@ function Import() {
                 <div className="card p-0 p-3 mb-3">
                   <div className="card-body m-0 p-0 ">
                     <span className="d-flex flex-row align-items-baseline">
-                      <i class="fa-regular fa-clock me-2"></i>
+                      <i className="fa-regular fa-clock me-2"></i>
                       <h6 className="card-title">Recent Import Activity</h6>
                     </span>
                     <small className="card-description">
@@ -262,7 +262,7 @@ function Import() {
                     <div className="card pb-3 export-data__allEmails">
                       <div className="card-body p-0 m-0">
                         <div className="mb-3 d-flex align-items-center">
-                          <i class="bi bi-people fs-4 me-3 text-center"></i>
+                          <i className="bi bi-people fs-4 me-3 text-center"></i>
                           <span>
                             <h6 className="card-title m-0 p-0">Contacts</h6>
                             <small className="">127 contacts</small>
@@ -281,7 +281,7 @@ function Import() {
                     <div className="card pb-3 export-data__allEmails">
                       <div className="card-body p-0 m-0">
                         <div className="mb-3 d-flex align-items-center">
-                          <i class="fa-regular fa-calendar fs-4 me-2"></i>
+                          <i className="fa-regular fa-calendar fs-4 me-2"></i>
                           <span>
                             <h6 className="card-title m-0 p-0">Calender</h6>
                             <small className="">3 calendar</small>
@@ -298,7 +298,7 @@ function Import() {
                     <div className="card pb-3 export-data__allEmails">
                       <div className="card-body p-0 m-0">
                         <div className="mb-3 d-flex align-items-center">
-                          <i class="bi bi-gear me-2 fs-4 text-center"></i>
+                          <i className="bi bi-gear me-2 fs-4 text-center"></i>
                           <span>
                             <h6 className="card-title m-0 p-0">Account Settings</h6>
                             <small className="">All prefrences</small>

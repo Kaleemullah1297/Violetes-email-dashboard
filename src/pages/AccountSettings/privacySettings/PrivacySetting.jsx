@@ -6,7 +6,7 @@ function PrivacySettings() {
       <div className="card pb-5">
         <div className="div privacy-settings">
           <div className="mb-4 py-3 d-flex align-items-center privacy-settings__header">
-            <i class="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
+            <i className="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">Privacy Settings</h5>
               <small>Control your information visibility</small>

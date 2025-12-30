@@ -59,7 +59,7 @@ function ProfileSettingsSidebar() {
                   to="/profile/contact-details"
                   className="nav-link active d-flex align-items-center text-dark"
                 >
-                  <i class="bi bi-telephone me-3"></i>
+                  <i className="bi bi-telephone me-3"></i>
                   <span>
                     <p className="p-0 m-0">Contact Details </p>
                     <small className="text-xs">Phone & Working hours</small>
@@ -80,7 +80,7 @@ function ProfileSettingsSidebar() {
                   to="/profile/work-information"
                   className="nav-link active d-flex align-items-center text-dark"
                 >
-                  <i class="bi bi-building me-3"></i>
+                  <i className="bi bi-building me-3"></i>
                   <span>
                     <p className="p-0 m-0">Work Information</p>
                     <small>Job title & company</small>
@@ -101,7 +101,7 @@ function ProfileSettingsSidebar() {
                   to="/profile/display-settings"
                   className="nav-link active d-flex align-items-center text-dark"
                 >
-                  <i class="bi bi-palette me-3"></i>
+                  <i className="bi bi-palette me-3"></i>
                   <span>
                     <p className="p-0 m-0">Display Settings</p>
                     <small>Appearence prefrences</small>

@@ -40,7 +40,7 @@ function EmailSignatures() {
               <div className="d-flex align-items-center gap-3 mb-5">
                 <p className="m-0">Make Default</p>
                 <i className="bi bi-plus fs-2"></i>
-                <i class="far fa-trash-alt text-danger"></i>
+                <i className="far fa-trash-alt text-danger"></i>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ function EmailSignatures() {
               <div className="d-flex align-items-center gap-3 mb-5">
                 <p className="m-0">Make Default</p>
                 <i className="bi bi-plus fs-2"></i>
-                <i class="far fa-trash-alt text-danger"></i>
+                <i className="far fa-trash-alt text-danger"></i>
               </div>
             </div>
 
@@ -104,7 +104,7 @@ function EmailSignatures() {
               <div className="d-flex align-items-center gap-3 mb-5">
                 <p className="m-0">Make Default</p>
                 <i className="bi bi-plus fs-2"></i>
-                <i class="far fa-trash-alt text-danger"></i>
+                <i className="far fa-trash-alt text-danger"></i>
               </div>
             </div>
 
@@ -126,7 +126,7 @@ function EmailSignatures() {
 
           {/*Social Links Footer*/}
           <div className="card p-5 d-flex align-items-center">
-            <i class="bi bi-plus fs-2"></i>
+            <i className="bi bi-plus fs-2"></i>
             <p>Create New Signature</p>
           </div>
         </div>

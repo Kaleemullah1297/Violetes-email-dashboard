@@ -1,0 +1,16 @@
+.tasks-tabs{
+    background-color: var(--mytasks-navtabs-background);
+    border-radius: 30px;
+    height: 40px;
+}
+
+.tasks-tabs .nav-link{
+    border-radius: 30px;
+    color: var(--text-color2);
+    font-weight: 600;
+    height: 38px;
+}
+
+.tasks-tabs .nav-link :active{
+    background-color: var(--text-navbar-page);
+}

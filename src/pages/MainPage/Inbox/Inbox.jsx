@@ -93,7 +93,7 @@ function Inbox() {
             Other Mail
           </button>
         </span>
-        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+        <i className="fa fa-ellipsis-h" aria-hidden="true"></i>
       </div>
 
       <small className="ms-3">Pulse Inbox (AI Priority)</small>

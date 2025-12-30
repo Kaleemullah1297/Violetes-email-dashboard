@@ -11,8 +11,8 @@ function TasksComponent() {
         mainTitle="Tasks"
         description="Keep track of your To-dos and action items"
         mainContent={<Card1 cardTitle="My Tasks" rightContent={<Button text="New Task"/>}/>}
-        topContent={<TopCardComponent cardTitle="Progress" />}
-        bottomContent={<BottomCardComponent cardTitle="Quick Stats"/>}
+        topContent={<TopCardComponent cardTitle="Progress"  />}
+        bottomContent={<BottomCardComponent cardTitle="Quick Stats" activeTasks="7" completedTasks="15" overDueTasks="0"/>}
       />
     </>
   );

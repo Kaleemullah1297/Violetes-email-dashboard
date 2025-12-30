@@ -16,8 +16,8 @@ function LeftBarLayout({
           <div className="row mt-5">
             <div className="col-8">{mainContent}</div>
             <div className="col-4">
-              {topContent}
-              {bottomContent}
+              <div className="mb-3">{topContent}</div>
+              <div>{bottomContent}</div>
             </div>
           </div>
         </div>

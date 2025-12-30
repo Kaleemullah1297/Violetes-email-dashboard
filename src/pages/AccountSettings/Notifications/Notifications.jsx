@@ -7,7 +7,7 @@ function Notifications() {
       <div className="card pb-5">
         <div className="div notification-settings">
           <div className="mb-4 py-3 d-flex align-items-center notification-settings__header">
-            <i class="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
+            <i className="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">Notification Preferences</h5>
               <small>Choose how you receive alerts</small>

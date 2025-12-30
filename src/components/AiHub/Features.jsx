@@ -10,7 +10,7 @@ function Features() {
             <div className="card pb-3 tone-lens main-cards">
               <div className="card-body p-0 m-0 p-1">
                 <span className="d-flex justify-content-between align-items-start">
-                  <i class="bi bi-eye fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
+                  <i className="bi bi-eye fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
                   <small className="header-right px-2" id="popular">
                     Popular
                   </small>
@@ -32,13 +32,13 @@ function Features() {
                 <button className="btn btn-2 p-0 p-1">Learn More</button>
                 <hr />
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Auto-complete
+                  <i className="bi bi-check2-circle me-1"></i>Auto-complete
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Tone adjustment
+                  <i className="bi bi-check2-circle me-1"></i>Tone adjustment
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Grammar check
+                  <i className="bi bi-check2-circle me-1"></i>Grammar check
                 </small>
               </div>
             </div>
@@ -49,7 +49,7 @@ function Features() {
             <div className="card pb-3 tone-lens main-cards">
               <div className="card-body p-0 m-0 p-1">
                 <span className="d-flex justify-content-between align-items-start">
-                  <i class="bi bi-mic fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
+                  <i className="bi bi-mic fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
                   <small className="header-right px-2 " id="new">
                     New
                   </small>
@@ -67,13 +67,13 @@ function Features() {
                 <button className="btn btn-2 p-0 p-1">Tutorial</button>
                 <hr />
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Voice commands
+                  <i className="bi bi-check2-circle me-1"></i>Voice commands
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Smart filters
+                  <i className="bi bi-check2-circle me-1"></i>Smart filters
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Fast results
+                  <i className="bi bi-check2-circle me-1"></i>Fast results
                 </small>
               </div>
             </div>
@@ -87,7 +87,7 @@ function Features() {
             <div className="card pb-3 tone-lens main-cards">
               <div className="card-body">
                 <span className="d-flex justify-content-between align-items-start">
-                  <i class="bi bi-eye fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
+                  <i className="bi bi-eye fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
                   <small className="header-right px-2 ">smart</small>
                 </span>
                 <div className="mt-3 mb-3">
@@ -103,13 +103,13 @@ function Features() {
                 <button className="btn btn-2 p-0 p-1">Examples</button>
                 <hr />
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Sentiment analysis
+                  <i className="bi bi-check2-circle me-1"></i>Sentiment analysis
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Urgency detection
+                  <i className="bi bi-check2-circle me-1"></i>Urgency detection
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Intent parsing
+                  <i className="bi bi-check2-circle me-1"></i>Intent parsing
                 </small>
               </div>
             </div>
@@ -120,7 +120,7 @@ function Features() {
             <div className="card pb-3 tone-lens main-cards">
               <div className="card-body">
                 <span className="d-flex justify-content-between align-items-start">
-                  <i class="bi bi-eye fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
+                  <i className="bi bi-eye fs-4 icon-1 d-flex align-items-center justify-content-center"></i>
                   <small className="header-right px-2" id="active">
                     Active
                   </small>
@@ -136,13 +136,13 @@ function Features() {
                 <button className="btn btn-2 p-0 p-1">Configure</button>
                 <hr />
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Auto-prioritization
+                  <i className="bi bi-check2-circle me-1"></i>Auto-prioritization
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Smart categories
+                  <i className="bi bi-check2-circle me-1"></i>Smart categories
                 </small>
                 <small className="me-2">
-                  <i class="bi bi-check2-circle me-1"></i>Learning AI
+                  <i className="bi bi-check2-circle me-1"></i>Learning AI
                 </small>
               </div>
             </div>

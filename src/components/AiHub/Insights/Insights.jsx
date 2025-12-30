@@ -12,7 +12,7 @@ function Insights() {
               <div className="card-body m-0 p-0 pb-4">
                 <span className="d-flex mb-5">
                   <i
-                    class="fa fa-bar-chart rotate-90 me-2"
+                    className="fa fa-bar-chart rotate-90 me-2"
                     aria-hidden="true"
                   ></i>
                   <h5 className="card-title">AI Performance</h5>

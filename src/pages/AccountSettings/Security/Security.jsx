@@ -6,7 +6,7 @@ function SecurityAndPrivacy() {
       <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
         <div className="div security-settings">
           <div className="mb-4 py-3 d-flex align-items-center security-settings__header">
-            <i class="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
+            <i className="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">Security & Privacy</h5>
               <small>Protect your accounts</small>

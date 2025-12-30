@@ -150,7 +150,7 @@ function PersonalInfo() {
                       <input type="text" className="form-control" />
 
                       <small>
-                        <i class="bi bi-eye me-1"></i>This name appears in
+                        <i className="bi bi-eye me-1"></i>This name appears in
                         emails and converstaions
                       </small>
                     </div>

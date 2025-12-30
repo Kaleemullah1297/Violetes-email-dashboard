@@ -7,7 +7,7 @@ function EmailAccounts() {
       <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
         <div className="div email-accounts">
           <div className="mb-4 py-3 d-flex align-items-center email-accounts__header">
-            <i class="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
+            <i className="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">Email Accounts</h5>
               <small>Manage connected email accounts</small>
@@ -53,7 +53,7 @@ function EmailAccounts() {
               <div className="card-body">
                 <div className="d-flex justify-content-between">
                   <span>
-                    <i class="bi bi-arrow-90deg-right me-2 fw-bold"></i>
+                    <i className="bi bi-arrow-90deg-right me-2 fw-bold"></i>
                     <h5 className="card-title m-0 p-0 d-inline">Email Forwarding</h5>
                   </span>
                   <div className="form-check form-switch ">
@@ -78,7 +78,7 @@ function EmailAccounts() {
                 <div className=" card mt-4">
                   <div className="card-body m-0">
                     <small className="card-description">
-                      <i class="bi bi-exclamation-circle me-3"></i>A copy of all
+                      <i className="bi bi-exclamation-circle me-3"></i>A copy of all
                       incoming emails will be sent to this address while keeping
                       originals in your inbox. Forwarding rules apply to new
                       emails only.

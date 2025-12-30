@@ -112,7 +112,7 @@ function DashboardNavBar() {
             {/*Settings*/}
             <li className="nav-item">
               <a href="" className="nav-link">
-                <i class="bi bi-gear fs-5"></i>
+                <i className="bi bi-gear fs-5"></i>
               </a>
             </li>
 

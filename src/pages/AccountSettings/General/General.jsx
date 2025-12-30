@@ -12,7 +12,7 @@ function Security() {
       <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
         <div className="security">
           <div className="mb-5 py-3 d-flex align-items-center security__general-settings-header">
-            <i class="icon-1 fa-regular fa-user me-3 ms-4"></i>
+            <i className="icon-1 fa-regular fa-user me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">General Settings</h5>
               <small>Configure your basic prefereces</small>
@@ -22,7 +22,7 @@ function Security() {
             <div className="card mb-5 py-4 security__general-settings">
               <div className="card-body">
                 <div className="text-center">
-                  <i class="icon-2 fa-regular fa-user  mb-3"></i>
+                  <i className="icon-2 fa-regular fa-user  mb-3"></i>
                   <h5 className="card-title fs-3 fw-bold mb-3">
                     General Settings
                   </h5>
@@ -39,7 +39,7 @@ function Security() {
             <div className="card mb-5  pb-3 language__preference main-card">
               <div className="card-body">
                 <div className="mb-5 d-flex align-items-center">
-                  <i class="bi bi-globe icon-2 me-2 icon"></i>
+                  <i className="bi bi-globe icon-2 me-2 icon"></i>
                   <span>
                     <h5 className="card-title m-0">
                       Regional & Language Settings
@@ -89,7 +89,7 @@ function Security() {
             <div className="card mb-5 main-card">
               <div className="card-body">
                 <div className="mb-5 d-flex align-items-center">
-                  <i class="bi bi-palette me-2 icon"></i>
+                  <i className="bi bi-palette me-2 icon"></i>
                   <span>
                     <h5 className="card-title m-0">Apperance & Theme</h5>
                     <small>Customize your visual experience</small>
