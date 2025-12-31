@@ -2,6 +2,7 @@ import LeftBarLayout from "../LeftBarLayout/leftBarLayout";
 import PeopleMainCard from "./PeopleMainCard/PeopleMainCard";
 import PeopleContactStatsCard from "./PeopleSideCard1/PeopleSideCards1";
 import PeopleRecentActivityCard from "./PeopleSideCard2/PeopleSideCard2";
+import Button from "../Common/Button/Button";
 
 function People() {
   return (

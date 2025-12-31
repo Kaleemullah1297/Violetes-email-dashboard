@@ -4,7 +4,7 @@ import { useState } from "react";
 import ComposeEmail from "../ComposeEmail/ComposeEmail";
 
 function DashboardNavBar() {
-  const [compose,setCompose]=useState(false);
+  const [compose, setCompose] = useState(false);
   return (
     // <>
     //   <div className="navbar navbar-expand-md dashboard-navbar container-fluid">
@@ -95,7 +95,10 @@ function DashboardNavBar() {
             {/*Mail Button*/}
             <li className="nav-item">
               <div className="nav-link">
-                <button className="btn  btn-outline-success d-flex align-items-center" onClick={()=>setCompose(true)}>
+                <button
+                  className="btn  btn-outline-success d-flex align-items-center"
+                  onClick={() => setCompose(true)}
+                >
                   <i className="fa-regular fa-envelope fs-6 me-1  d-md-block d-none"></i>
                   New Mail
                 </button>
@@ -125,7 +128,7 @@ function DashboardNavBar() {
         </nav>
       </div>
 
-      {compose && <ComposeEmail onClose={()=>setCompose(false)}/>}
+      {compose && <ComposeEmail onClose={() => setCompose(false)} />}
     </>
   );
 }

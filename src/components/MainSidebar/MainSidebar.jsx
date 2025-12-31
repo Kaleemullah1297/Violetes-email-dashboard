@@ -9,7 +9,7 @@ function MainSidebar() {
   const { theme, toggleTheme } = useContext(DarkThemeContext);
   return (
     <>
-      <div className="main-sidebar">
+      <div className="main-sidebar d-lg-block d-none">
         <div className="d-flex justify-content-center p-4">
           <img src={logo} alt="Main logo" className="img-fluid w-75" />
         </div>

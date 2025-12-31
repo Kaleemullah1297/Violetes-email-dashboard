@@ -9,7 +9,7 @@ function LeftBarLayout({
 }) {
   return (
     <>
-      <div className="container leftbar-layout">
+      <div className="leftbar-layout p-3">
         <div className="leftbar-layout-header ms-3 mt-4">
           <h2 className="m-0 p-0">{mainTitle}</h2>
           <p>{description}</p>

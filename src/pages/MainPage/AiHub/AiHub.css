@@ -1,9 +1,9 @@
 .ai-hub-header{
-    background: var(--bg-navbar-page);
+    background: var(--color-primary-gradient);
 }
 
 .ai-hub-header .top h3{
-  color: var(--buttton-text);
+  color: var(--color-surface-base);
 }
 
 .ai-hub-header .top small{
@@ -15,7 +15,7 @@
 }
 
 .ai-hub-header .col-3 .card{
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-surface-overlay);
   border: 0.91px solid rgba(255, 255, 255, 0.2)
 }
 
@@ -25,19 +25,15 @@
 
 .ai-hub-tabs {
   background-color:  rgba(236, 236, 240, 1);
-  padding: 4px;
-  border-radius: 999px;
-  display: flex;
-  gap: 6px;
+  border-radius: 30px;
 }
 
 .ai-hub-tabs .nav-link {
-  border-radius: 999px;
-  padding: 5px 80px;
   color: #6b7280;
   background: transparent;
   font-weight: 500;
   transition: all 0.2s ease;
+  border-radius: 30px;
 }
 
 .ai-hub-tabs .nav-link i {
@@ -52,4 +48,15 @@
 
 .ai-hub-tabs .nav-link:hover {
   color: #111827;
+}
+.nav-item{
+  width: 25%;
+  
+}
+.nav-link{
+text-align: center;
+}
+.ai-hub-tabs button {
+  white-space: nowrap;
+  width: 100%;
 }

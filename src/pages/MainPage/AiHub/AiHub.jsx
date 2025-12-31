@@ -15,7 +15,7 @@ function AiHub() {
           </div>
 
           <div className="row g-3 mx-2 bottom">
-            <div className="col-3">
+            <div className="col-3 h-100">
               <div className="card m-0 p-0  p-2">
                 <div className="card-body p-0 m-0 ps-2">
                   <small className="card-title">AI Actions Today</small>
@@ -25,7 +25,7 @@ function AiHub() {
             </div>
 
             <div className="col-3">
-              <div className="card m-0 p-0  p-2">
+              <div className="card m-0 p-0  p-2  h-100">
                 <div className="card-body p-0 m-0 ps-2">
                   <small className="card-title">Time Saved</small>
                   <h3>257</h3>
@@ -33,8 +33,8 @@ function AiHub() {
               </div>
             </div>
 
-            <div className="col-3">
-              <div className="card m-0 p-0  p-2">
+            <div className="col-3 ">
+              <div className="card m-0 p-0  p-2 h-100">
                 <div className="card-body p-0 m-0 ps-2">
                   <small className="card-title">Emails Sorted</small>
                   <h3>257</h3>
@@ -43,7 +43,7 @@ function AiHub() {
             </div>
 
             <div className="col-3">
-              <div className="card m-0 p-0  p-2">
+              <div className="card m-0 p-0  p-2  h-100">
                 <div className="card-body p-0 m-0 ps-2">
                   <small className="card-title">Ai accuracy</small>
                   <h3>257</h3>
@@ -54,47 +54,47 @@ function AiHub() {
         </div>
 
         <div className="px-4">
-          <ul className="nav nav-pills ai-hub-tabs">
+          <ul className="nav nav-pills ai-hub-tabs d-flex justify-content-between">
             <li className="nav-item">
               <button
-                className="nav-link active d-flex align-items-center gap-2"
+                className="nav-link active d-flex justify-content-center"
                 data-bs-toggle="tab"
                 data-bs-target="#features"
               >
-                <i className="bi bi-lightning-charge"></i>
+                <i className="bi bi-lightning-charge me-1"></i>
                 <span>Features</span>
               </button>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <button
-                className="nav-link d-flex align-items-center gap-2"
+                className="nav-link d-flex justify-content-center"
                 data-bs-toggle="tab"
                 data-bs-target="#quick-actions"
               >
-                <i className="bi bi-lightning-charge"></i>
+                <i className="bi bi-bullseye me-1"></i>
                 <span>Quick Actions</span>
               </button>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <button
-                className="nav-link d-flex align-items-center gap-2"
+                className="nav-link d-flex justify-content-center align-items-center"
                 data-bs-toggle="tab"
                 data-bs-target="#insights"
               >
-                <i className="bi bi-lightning-charge"></i>
+                <i class="fa-solid fa-chart-column me-1"></i>
                 <span>Insights</span>
               </button>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <button
-                className="nav-link d-flex align-items-center gap-2"
+                className="nav-link d-flex justify-content-center"
                 data-bs-toggle="tab"
                 data-bs-target="#settings"
               >
-                <i className="bi bi-gear"></i>
+                <i className="bi bi-gear me-1"></i>
                 <span>Settings</span>
               </button>
             </li>
