@@ -1,0 +1,12 @@
+.send-feedback .footer small{
+    font-size: 12px;
+}
+
+.send-feedback .footer{
+    background-color: #ECECF04D;
+    border:0.91px solid #d5d5da4d;
+}
+
+.send-feedback small{
+    color:#717182;
+}

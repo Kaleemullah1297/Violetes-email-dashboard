@@ -12,7 +12,7 @@ function Navbar({heading,description}) {
             <i
               className="fa-solid fa-xmark align-self-center me-4"
               id="cross"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/dashboard")}
               style={{ cursor: "pointer" }}
             ></i>
 

@@ -1,0 +1,27 @@
+.help-and-support{
+    background-color: #FFFFFF;
+    border: 0.91px solid #0000001A
+}
+
+.help-and-support i{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    align-content: center;
+}
+
+.help-and-support .card-title{
+    color: #0A0A0A;
+}
+
+.help-and-support .card-description{
+    color: #717182;
+}
+
+.help-and-support .btn{
+    background-color:   #FFFFFF;
+    border: 0.91px solid #0000001A;
+    color: #0A0A0A;
+    font-weight: 500;
+    font-size: 14px;
+}

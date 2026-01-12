@@ -1,0 +1,25 @@
+.keybord-shortcut-keys-footer{
+    background-color:  #ECECF080 !important;
+    border-color: #ECECF080 !important;
+}
+
+.keybord-shortcut-keys .modal-title,.modal-icon,small{
+    color: #0A0A0A;
+}
+
+.keybord-shortcut-keys h6{
+    color: #112E4E;
+}
+
+
+.keybord-shortcut-keys .footer small{
+    color: #717182;
+}
+
+.keybord-shortcut-keys .footer h6{
+    color: #0A0A0A;
+}
+
+.keybord-shortcut-keys .footer i{
+    color:#112E4E;
+}

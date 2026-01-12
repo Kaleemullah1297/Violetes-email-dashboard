@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import HelpAndSupportCard from './card.jsx'
+import HelpAndSupportCard from "./card.jsx";
+import "./HelpAndSupport.css";
 
 function HelpAndSupportModel({ onClose }) {
   // Lock body scroll while modal is open
@@ -30,12 +31,15 @@ function HelpAndSupportModel({ onClose }) {
             <div className="modal-body">
               {/* Modal Header */}
               <div className="d-flex justify-content-between">
-                <span>
-                  <h5 className="modal-title">Help & Support</h5>
+                <div>
+                  <span className="d-flex align-items-center">
+                    <i className="fa-regular fa-lightbulb me-2"></i>
+                    <h5 className="modal-title m-0 p-0">Help & Support</h5>
+                  </span>
                   <small>
                     Get assistance and learn more about Violetis Mail features
                   </small>
-                </span>
+                </div>
                 <button
                   type="button"
                   className="btn-close fs-6"
@@ -43,65 +47,98 @@ function HelpAndSupportModel({ onClose }) {
                 ></button>
               </div>
 
-              <div className="row mb-2">
+              {/*Row 1*/}
+
+              <div className="row mb-2 mt-2 g-0 g-3">
                 <div className="col-6">
-                  <HelpAndSupportCard title="Quick Start Guide" description="Learn the basics in 5 minutes"  buttonText="Get Started"/>
+                  <HelpAndSupportCard
+                    icon={
+                      <i className="fa-regular fa-lightbulb me-2 bulb-icon"></i>
+                    }
+                    title="Quick Start Guide"
+                    description="Learn the basics in 5 minutes"
+                    buttonText="Get Started"
+                  />
                 </div>
                 <div className="col-6">
-                  <HelpAndSupportCard title="Video Tutorials" description="Watch step-by-step guides"  buttonText="Watch Videos"/>
+                  <HelpAndSupportCard
+                    icon={
+                      <i class="fa-regular fa-file-lines file-icon me-2"></i>
+                    }
+                    title="Video Tutorials"
+                    description="Watch step-by-step guides"
+                    buttonText="Watch Videos"
+                  />
                 </div>
               </div>
 
-              <div className="row mb-2">
+              {/*Row 2*/}
+              <div className="row mb-2 g-0 g-3">
                 <div className="col-6">
-                 <HelpAndSupportCard title="Documentation" description="Complete feature reference" buttonText="Read Docs"/>
+                  <HelpAndSupportCard
+                    icon={<i class="fa-solid fa-globe globe-icon me-2"></i>}
+                    title="Documentation"
+                    description="Complete feature reference"
+                    buttonText="Read Docs"
+                  />
                 </div>
                 <div className="col-6">
-                  <HelpAndSupportCard title="Contact Support" description="Get personal assistance"  buttonText="Contact Us"/>
+                  <HelpAndSupportCard
+                    icon={<i class="fa-regular fa-message contact me-2"></i>}
+                    title="Contact Support"
+                    description="Get personal assistance"
+                    buttonText="Contact Us"
+                  />
                 </div>
               </div>
 
-              <h5 className="mb-4">Frequently Asked Questions</h5>
+              {/*Frequently Asked Questions*/}
+              <h6 className="mb-4 mt-4">Frequently Asked Questions</h6>
 
-              <div className="card mb-2 m-0 p-0 p-2">
-                <div className="card-body m-0 p-0">
-                  <h6 className="card-title m-0 p-0">
-                    What AI features are available?
-                  </h6>
-                  <small>
-                    Go to Account Settings → Import/Export → Gmail Import to
-                    securely transfer your emails.
-                  </small>
+              <div className="frequently-asked-questions">
+                <div className="card mb-2 py-2">
+                  <div className="card-body m-0 p-0">
+                    <h6 className="card-title m-0 p-0">
+                      How do I import emails from Gmail?
+                    </h6>
+                    <small>
+                      Go to Account Settings → Import/Export → Gmail Import to
+                      securely transfer your emails.
+                    </small>
+                  </div>
+                </div>
+
+                <div className="card  mb-2 py-2">
+                  <div className="card-body m-0 p-0">
+                    <h6 className="card-title m-0 p-0">
+                      What AI features are available?
+                    </h6>
+                    <small>
+                      Violet Write, Echo Search, Tone Lens, and Pulse Inbox help
+                      you manage emails intelligently.
+                    </small>
+                  </div>
+                </div>
+
+                <div className="card  mb-2 py-2">
+                  <div className="card-body m-0 p-0">
+                    <h6 className="card-title m-0 p-0">
+                      How do I enable two-factor authentication?
+                    </h6>
+                    <small>
+                      Navigate to Account Settings → Security → Two-Factor
+                      Authentication to enhance your account security.
+                    </small>
+                  </div>
                 </div>
               </div>
 
-              <div className="card mb-2 m-0 p-0 p-2">
+              <div className="card p-0 m-0 py-3 ps-3 help-and-support-footer">
                 <div className="card-body m-0 p-0">
-                  <h6 className="card-title m-0 p-0">
-                    What AI features are available?
-                  </h6>
-                  <small>
-                    Violet Write, Echo Search, Tone Lens, and Pulse Inbox help
-                    you manage emails intelligently.
-                  </small>
-                </div>
-              </div>
-
-              <div className="card mb-2 m-0 p-0 p-2">
-                <div className="card-body m-0 p-0">
-                  <h6 className="card-title m-0 p-0">
-                    What AI features are available?
-                  </h6>
-                  <small>
-                    Navigate to Account Settings → Security → Two-Factor
-                    Authentication to enhance your account security.
-                  </small>
-                </div>
-              </div>
-
-              <div className="card m-0 p-0">
-                <div className="card-body m-0 p-0">
-                  <h6 className="m-0 p-0">All Systems Operational</h6>
+                  <span className="d-flex align-items-baseline">
+                    <i class="fa-solid fa-circle me-2"></i>
+                    <h6 className="">All Systems Operational</h6>
+                  </span>
                   <small>
                     Violetis Mail services are running normally. Last updated 2
                     minutes ago.

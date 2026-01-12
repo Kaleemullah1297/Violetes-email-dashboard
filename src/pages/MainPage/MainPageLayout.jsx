@@ -1,27 +1,27 @@
 import { Route, Routes } from "react-router-dom";
-import MainSideBar from "../../components/DashboardSidebar/DashboardSidebar";
+import DashboardSidebar from "../../components/Dashboard/DashboardSidebar/DashboardSidebar";
 import Calender from "./Calender/Calender";
 import TaskPage from "./Task/Task";
 import Notes from "./Notes/Notes";
 import People from "./People/People";
 import Newsletters from "./Newletters/Newsletters";
 import AiHub from "./AiHub/AiHub";
-import DashboradNavBar from "../../components/Dashboard/DasboardNavBar";
+//import DashboradNavBar from "../../components/Dashboard/DashboardNavbar/DasboardNavBar";
 import Inbox from "./Inbox/Inbox";
 import SentItems from "./SentItems/SentItems";
 import Drafts from "./Drafts/Drafts";
 import DeletedMails from "./DeletedMails/DeletedMails";
 import Archieve from "./Archieves/Archieves";
 import JunkEmails from "./JunkEmails/JunkEmails";
-import Mock from '../../components/mock'
+import DashboardNavbar from "../../components/Dashboard/DashboardNavbar/DashboardNavbar";
 
 function MainPageLayout() {
   return (
     <>
       <div className="d-flex">
-        <MainSideBar />
+        <DashboardSidebar />
         <div className="flex-grow-1">
-          <Mock/>
+          <DashboardNavbar />
           <Routes>
             <Route index element={<Inbox />} />
             <Route path="calender" element={<Calender />} />

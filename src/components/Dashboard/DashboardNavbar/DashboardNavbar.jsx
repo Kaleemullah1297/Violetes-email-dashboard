@@ -1,12 +1,11 @@
-import UserProfileDropdown from "./Dashboard/USerProfileDropDown/UserProfile";
-import "./mock.css";
-import focus from "../assets/camera-focus.png";
-import SettingsDropdown from "./sideBar/SettingDropDown/Settingsdropdown";
+import UserProfileDropdown from "../USerProfileDropDown/UserProfile";
+import "./DashboardNavbar.css";
+import focus from "../../../assets/camera-focus.png";
+import SettingsDropdown from "../../sideBar/SettingDropDown/Settingsdropdown";
 import { useState } from "react";
-import ComposeEmail from "../components/ComposeEmail/ComposeEmail";
+import ComposeEmail from "../../ComposeEmail/ComposeEmail";
 
-
-function Mock() {
+function DashboardNavbar() {
   const [showCompose, setShowCompose] = useState(false);
 
   return(
@@ -111,4 +110,4 @@ function Mock() {
   );
 }
 
-export default Mock;
+export default DashboardNavbar;

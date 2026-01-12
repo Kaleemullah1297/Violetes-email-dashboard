@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../../components/Profile/Navbar/Navbar";
-import ProfileSettingsSidebar from "../../components/Profile/Profile-settings-sidebar/profile.jsx";
+import ProfileSettingsSidebar from "../../components/Profile/ProfileSidebar/ProfileSidebar.jsx";
 import PersonalInfo from "./personalInfo/personalInfo.jsx";
 import ContactDetails from "./contact-details/contactDetails.jsx";
 import WorkInformation from "./workInformation/workInformation.jsx";

@@ -1,0 +1,48 @@
+.help-and-support .bulb-icon{
+    background-color: #EFF6FF;
+    color: #155DFC;
+}
+
+.help-and-support .file-icon{
+    background-color: #F0FDF4;
+    color:#00A63E;
+}
+
+.help-and-support .globe-icon{
+    background-color: #FAF5FF;
+    color:#9810FA;
+}
+
+.help-and-support .contact{
+    background-color: #FFF7ED;
+    color:#F54900;
+}
+
+.frequently-asked-questions .card{
+    background-color: #ECECF04D;
+    border: #ECECF04D;
+}
+
+.frequently-asked-questions small{
+    font-size: 12px;
+    color: #717182;
+}
+
+.help-and-support-footer{
+    background-color: #F0FDF4 !important;
+    border-top: 0.91px solid #B9F8CF !important;
+}
+
+.help-and-support-footer h6{
+    color:  #016630;
+}
+
+.help-and-support-footer small{
+    font-size: 12px;
+    color: #00A63E;
+}
+
+.help-and-support-footer i{
+    color: #00C950;
+    font-size: 8px;
+}

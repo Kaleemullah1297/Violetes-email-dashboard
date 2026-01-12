@@ -4,9 +4,13 @@ import "./SettingsDropdown.css";
 import ProgressBar from "../../../components/ProgressBar/ProgressBar.jsx";
 import { NavLink } from "react-router-dom";
 import HelpAndSupportModel from "../../Help&Support/Help&SupportModel.jsx";
+import KeyboardShortcuts from "../../KeyboardShortcuts/KeyboardShortcuts.jsx";
+import SendFeedBack from "../../SendFeedBack/SendFeedBack.jsx";
 
 function SettingsDropdown() {
   const [showHelp, setShowHelp] = useState(false);
+  const [showKeyboard, setShowKeyboard] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
   const ref = useRef(null);
 
   // Dropdown open/close state only
@@ -225,16 +229,17 @@ function SettingsDropdown() {
           <hr className="m-0 p-0 pb-1" />
 
           <div>
-            <a
-              href="#"
+            <button
+              type="button"
               className="dropdown-item d-flex align-items-baseline"
-              data-bs-toggle="modal"
-              data-bs-target="#settingsModal"
-              onClick={(e) => e.preventDefault()}
+              onClick={() => {
+                setShowKeyboard(true);
+                setOpen(false); // close dropdown
+              }}
             >
-              <i className="fa-regular fa-user me-2 fs-6"></i>
+              <i className="fa-regular fa-keyboard me-2 fs-6"></i>
               <p className="m-0 p-0">Keyboard Shortcuts</p>
-            </a>
+            </button>
 
             <button
               type="button"
@@ -248,16 +253,17 @@ function SettingsDropdown() {
               <p className="m-0 p-0">Help & Support</p>
             </button>
 
-            <a
-              href="#"
+            <button
+              type="button"
               className="dropdown-item d-flex align-items-baseline"
-              data-bs-toggle="modal"
-              data-bs-target="#settingsModal"
-              onClick={(e) => e.preventDefault()}
+              onClick={() => {
+                setShowFeedback(true);
+                setOpen(false); // close dropdown
+              }}
             >
-              <i className="fa-regular fa-user me-2 fs-6"></i>
+              <i className="fa-regular fa-envelope me-2 fs-6"></i>
               <p className="m-0 p-0">Send Feedback</p>
-            </a>
+            </button>
           </div>
 
           <hr />
@@ -269,6 +275,20 @@ function SettingsDropdown() {
         <HelpAndSupportModel
           show={showHelp}
           onClose={() => setShowHelp(false)}
+        />
+      )}
+
+      {showKeyboard && (
+        <KeyboardShortcuts
+          show={showKeyboard}
+          onClose={() => setShowKeyboard(false)}
+        />
+      )}
+
+      {showFeedback && (
+        <SendFeedBack
+          show={showFeedback}
+          onClose={() => setShowFeedback(false)}
         />
       )}
     </>

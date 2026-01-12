@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./Dashboardsidebar.css";
-import logo from "../../assets/logo.png";
-import ProgressBar from "../ProgressBar/ProgressBar";
-import DarkThemeContext from "../../context/DarkThemeContext";
+import logo from "../../../assets/logo.png";
+import ProgressBar from "../../ProgressBar/ProgressBar";
+import DarkThemeContext from "../../../context/DarkThemeContext";
 
-function MainSidebar() {
+function DashboardSidebar() {
   const { theme, toggleTheme } = useContext(DarkThemeContext);
   return (
     <>
@@ -189,4 +189,4 @@ function MainSidebar() {
   );
 }
 
-export default MainSidebar;
+export default DashboardSidebar;

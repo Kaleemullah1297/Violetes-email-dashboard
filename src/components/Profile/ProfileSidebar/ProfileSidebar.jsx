@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../../../components/AccountSettings/AccountSettingsSidebar/AccountSettingsSidebar";
+import "../../AccountSettings/AccountSettingsSidebar/AccountSettingsSidebar";
 //import ProgressBar from "../../ProgressBar/ProgressBar";
-import "./profile.css";
+import "./ProfileSidebar.css";
 import SidebarProfileCard from "../card/SidebarProfileCard";
 
 function ProfileSettingsSidebar() {

@@ -1,0 +1,48 @@
+.compose-modal {
+  padding: 2rem;              /* space from all sides */
+}
+
+.compose-modal .modal-content {
+  border-radius: 12px;       /* optional: rounded edges */
+}
+
+.violetes-write{
+    background: linear-gradient(90deg, #FAF5FF 0%, #F5F3FF 100%);
+    border: 0.91px solid #0000001A !important
+}
+
+.violetes-write .btn{
+    background-color: #FFFFFF;
+    border: 0.91px solid #0000001A
+}
+
+.attach-button{
+    background-color: #FFFFFF;
+    border: 0.91px solid #0000001A;
+    border-radius: 10px; 
+}
+
+.smile-button{
+    background-color: #FFFFFF;
+    border: 0.91px solid #0000001A;
+    border-radius: 10px;
+}
+
+.cancel-button{
+    background-color: #FFFFFF;
+    border: 0.91px solid #0000001A;
+    border-radius: 10px;
+}
+
+.send-button{
+    background-color: #112E4E;
+    border: 0.91px solid #0000001A;
+    border-radius: 10px;
+    color:  #FFFFFF;
+}
+
+.send-button i{
+    color:  #FFFFFF;
+}
+
+
