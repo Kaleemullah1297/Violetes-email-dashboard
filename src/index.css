@@ -12,6 +12,7 @@
     rgba(17, 46, 78, 0.063) 0%,
     rgba(30, 58, 95, 0.063) 100%
   );
+  --main-page-backgroung:linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%);
 
   /* =========================
      Text Colors
@@ -41,10 +42,40 @@ body {
   color: var(--text-color);
 }
 
-input.form-control {
-  background-color: grey;
-  color: var(--text-color);
-  border-color: #ccc; /* optional */
+.form-control.form-control {
+  background-color: var(--color-surface-input);
+  color: var(--color-text-secondary);
+  border: 1.81px solid rgba(229, 231, 235, 1);
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 400;
 }
+
+.form-select.form-select{
+   background-color: var(--color-surface-input);
+  color: rgba(10, 10, 10, 1);
+  border: 1.81px solid rgba(229, 231, 235, 1);
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card.card{
+    border-radius: 14px;
+    /* padding-top: 24px; */
+    padding-right:24px;
+    padding-left: 24px;
+    padding-bottom: 0.91px;
+    background-color:var(--color-surface-card);
+    border: 1px solid rgba(203, 206, 212, 1)
+}
+
+small.small{
+  color:var(--color-text-secondary)
+}
+
+
+
+
 
 

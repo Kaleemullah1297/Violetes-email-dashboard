@@ -1,0 +1,12 @@
+.email_signatures{
+    border-left:3.62px solid rgba(162, 244, 253, 1);
+}
+
+.email_signatures-header{
+    background-color: rgba(236, 254, 255, 1);
+    border-bottom: 0.91px solid rgba(162, 244, 253, 1)
+}
+
+.email_signatures-header h5,small,i{
+    color: rgba(17, 46, 78, 1);
+}

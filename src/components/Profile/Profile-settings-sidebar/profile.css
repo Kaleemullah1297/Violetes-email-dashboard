@@ -65,3 +65,8 @@ sidebar-para-2{
     line-height: 20px;
 }
  */
+
+.sidebar-subtitle {
+  font-size: 0.75rem; /* controlled size */
+  color: #6b7280;
+}

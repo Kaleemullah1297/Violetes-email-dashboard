@@ -11,13 +11,13 @@ import SocialLinks from "./socailLinks/socialLinks.jsx";
 function ProfileLayout() {
   return (
     <>
-      <Navbar />
+      <Navbar heading="Profile Settings" description="Customize your professional identity"/>
       <div className="d-flex">
         <div>
           <ProfileSettingsSidebar/>
         </div>
         <div className="bg-danger"></div>
-        <div className="flex-grow-1 px-3">
+        <div className="flex-grow-1 m-0">
           <Routes>
             <Route index element={<PersonalInfo />} />
             <Route path="personal-info" element={<PersonalInfo />} />

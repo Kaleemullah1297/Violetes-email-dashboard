@@ -4,18 +4,18 @@ import Button from "../../../components/LeftBar/Common/Button/Button";
 function EmailAccounts() {
   return (
     <>
-      <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
+      <div className="px-4 pt-4 mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
         <div className="div email-accounts">
           <div className="mb-4 py-3 d-flex align-items-center email-accounts__header">
-            <i className="bi bi-eye icon-1 fs-5 me-3 ms-4"></i>
+            <i className="fa-regular fa-envelope icon-1 fs-5 me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">Email Accounts</h5>
               <small>Manage connected email accounts</small>
             </span>
           </div>
 
-          <div className="ms-4 me-2">
-            <div className="mb-5">
+          <div className="ms-5 me-5">
+            <div className="mb-4">
               <h5>Email Accounts</h5>
               <small>
                 Manage your connected email accounts and forwarding settings
@@ -23,7 +23,7 @@ function EmailAccounts() {
             </div>
           </div>
 
-          <div className="ms-4 me-2">
+          <div className="ms-5 me-5">
             <div className="mb-5 d-flex align-items-center justify-content-between">
               <span>
                 <h5>Connected Email Accounts</h5>
@@ -34,7 +34,7 @@ function EmailAccounts() {
             </div>
           </div>
 
-          <div className="ms-4 me-2  mb-5">
+          <div className="ms-5 me-5 mb-5">
             <div className="card d-flex flex-row justify-content-center py-3">
               <button className="btn email-accounts-button me-3">
                 <i className="fa-solid fa-plus"></i>
@@ -46,9 +46,9 @@ function EmailAccounts() {
             </div>
           </div>
 
-          <hr />
+          <hr  className="ms-5 me-5"/>
 
-          <div className="ms-4 me-2  mb-5">
+          <div className="ms-5 me-5  mb-5">
             <div className="card">
               <div className="card-body">
                 <div className="d-flex justify-content-between">

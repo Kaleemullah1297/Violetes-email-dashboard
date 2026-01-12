@@ -2,7 +2,7 @@ import "./Navbar.css";
 import reactLogo from "../../../assets/react.svg";
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar({heading,description}) {
   const navigate = useNavigate();
   return (
     <>
@@ -20,9 +20,9 @@ function Navbar() {
               <img src={reactLogo} alt="JD" className="profile-img me-3" />
 
               <div className="text-block">
-                <h5 className="fs-4 fs-sm-5 mb-0">Profile Settings</h5>
+                <h5 className="fs-4 fs-sm-5 mb-0">{heading}</h5>
                 <p className="mb-0 d-none d-sm-block">
-                  Customize your professional identity
+                  {description}
                 </p>
               </div>
             </div>

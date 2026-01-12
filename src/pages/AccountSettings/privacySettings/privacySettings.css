@@ -1,9 +1,5 @@
 .privacy-settings{
-border-left: 3.62px solid rgba(0, 184, 219, 1)
-}
-
-.privacy-settings label{
-    font-weight: 600;
+border-left: 3.62px solid  rgba(0, 146, 184, 1);
 }
 
 .privacy-settings__header{
@@ -29,4 +25,8 @@ border-left: 3.62px solid rgba(0, 184, 219, 1)
 
 .form-check :active-view-transition{
     border-color:var(--primary-color);
+}
+
+.privacy-settings label{
+    font-weight: 600;
 }

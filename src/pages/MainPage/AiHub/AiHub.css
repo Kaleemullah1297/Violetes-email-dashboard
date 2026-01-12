@@ -49,13 +49,15 @@
 .ai-hub-tabs .nav-link:hover {
   color: #111827;
 }
-.nav-item{
+.ai-hub-tabs .nav-item{
   width: 25%;
   
 }
-.nav-link{
+
+.ai-hub-tabs .nav-link{
 text-align: center;
 }
+
 .ai-hub-tabs button {
   white-space: nowrap;
   width: 100%;

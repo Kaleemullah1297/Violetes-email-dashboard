@@ -1,5 +1,9 @@
+.import-settings-container{
+    background: var(--main-page-background);
+}
+
 .import-settings{
-    border-left: 3.62px solid rgba(246, 51, 154, 1)
+    border-left: 3.62px solid  rgba(230, 0, 118, 1);
 }
 
 .import-settings__header{
@@ -11,7 +15,7 @@
     color: rgba(134, 16, 67, 1);
 }
 
-.import-settings__header{
+.import-settings__header small{
     color: rgba(198, 0, 92, 1);
 }
 
@@ -82,3 +86,40 @@
     background-color:  rgba(17, 46, 78, 1);
     color: rgba(255, 255, 255, 1);
 }
+
+.tag{
+    border: 0.91px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.recommended-tag{
+    background-color: rgba(17, 46, 78, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+.export-complete-data{
+    background: linear-gradient(90deg, rgba(17, 46, 78, 0.05) 0%, rgba(17, 46, 78, 0.05) 100%);
+    border: 0.91px solid rgba(17, 46, 78, 0.2)
+}
+
+.import-export-footer{
+    background: linear-gradient(90deg, #F5F3FF 0%, #FAF5FF 100%);
+    border:  rgba(221, 214, 255, 1)
+}
+
+.import-export-footer h6{
+    color: rgba(77, 23, 154, 1);
+} 
+
+.import-export-footer small{
+    color: rgba(112, 8, 231, 1);
+} 
+
+.import-export-footer button{
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.91px solid rgba(196, 180, 255, 1);
+   color: rgba(112, 8, 231, 1);
+}
+
+

@@ -1,0 +1,33 @@
+.personal_info-header h5{
+    color: rgba(28, 57, 142, 1);
+}
+
+.personal_info-header small{
+    color: rgba(20, 71, 230, 1);
+}
+
+.personal_info-header i{
+    color:  rgba(21, 93, 252, 1)
+}
+
+.personal_info-header{
+    background-color: rgba(239, 246, 255, 1);
+    border-bottom: 0.91px solid rgba(190, 219, 255, 1);
+}
+
+.personal_info{
+    border-left: 3.62px solid rgba(21, 93, 252, 1)
+}
+
+.profile-photo-footer{
+    background-color: rgba(239, 246, 255, 1) !important;
+    border: rgba(239, 246, 255, 1) !important;
+}
+
+.profile-photo-footer h6{
+    color: rgba(21, 93, 252, 1) !important;
+}
+
+
+
+

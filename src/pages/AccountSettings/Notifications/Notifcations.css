@@ -4,5 +4,17 @@
 }
 
 .notification-settings{
- border-left: 3.62px solid rgba(255, 105, 0, 1)
+ border-left: 3.62px solid  rgba(245, 73, 0, 1);
+}
+
+.notification-settings__header h5{
+    color: rgba(126, 42, 12, 1);
+}
+
+.notification-settings__header small{
+    color: rgba(202, 53, 0, 1);
+}
+
+.notification-settings__header i{
+    color:  rgba(245, 73, 0, 1)
 }

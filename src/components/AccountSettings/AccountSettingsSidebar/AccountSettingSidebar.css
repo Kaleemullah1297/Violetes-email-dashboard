@@ -1,3 +1,23 @@
+.account-settings-sidebar-header h5{
+  color: rgba(16, 24, 40, 1);
+}
+
+.account-settings-sidebar-header small{
+  color:  rgba(106, 114, 130, 1);
+}
+
+.account-settings-list p{
+  color: rgba(10, 10, 10, 1);
+}
+
+.account-settings-list small{
+  color: rgba(106, 114, 130, 1);
+}
+
+.account-settings-list i{
+  color:  rgba(10, 10, 10, 1)
+}
+
 .sidebar-expanded {
   width: 220px;
   max-width: 220px;
@@ -15,8 +35,8 @@
 }
 
 .account-settings-sidebar{
-  background-color: white;
-  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-right: 0.91px solid rgba(229, 231, 235, 0.5)
 }
 
 .account-settings-sidebar-header h5{
@@ -41,26 +61,36 @@
 /* Change text color when active */
 .account-settings-list li.active a,
 .account-settings-list li.active p,
-.account-settings-list li.active small,
 .account-settings-list li.active i {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
-.account-settings-list li.active {
-  font-size: 15px;
+.account-settings-list li.active small{
+  color: rgba(255, 255, 255, 0.8);
 }
 
+.account-setting-footer-icon{
+  color: rgba(240, 177, 0, 1);
+}
 
-.card{
+.account-sttings-sidebar-footer h6{
+  color: rgba(10, 10, 10, 1);
+}
+
+.account-sttings-sidebar-footer .small{
+  color: rgba(74, 85, 101, 1);
+}
+
+/* .card-1{
     border-radius: 16px;
     padding-top: 24px;
     padding-right:24px;
     padding-left: 24px;
     padding-bottom: 0.91px;
-    background-color:rgba(255, 255, 255, 1);
+    background-color:rgba(255, 255, 255, 0.8);
     border: rgba(229, 231, 235, 0.5);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .account-sttings-sidebar-footer{
   background-color: rgba(255, 255, 255, 1);
@@ -71,6 +101,13 @@
 .progress-bar{
   height: 10px;
 }
+
+.sidebar-subtitle {
+  font-size: 0.75rem; /* controlled size */
+  color: #6b7280;
+}
+
+
 
 
 

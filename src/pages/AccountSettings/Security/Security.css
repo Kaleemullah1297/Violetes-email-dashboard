@@ -1,20 +1,61 @@
 .security-settings{
-    border-left: 3.62px solid rgba(0, 201, 80, 1)
+    border-left: 3.62px solid  rgba(0, 166, 62, 1);
 }
 
 .security-settings__header{
-    background-color: rgba(240, 253, 246, 1);
-    border-bottom: 1px solid rgba(187, 240, 210, 1)
+    background-color: rgba(239, 252, 244, 1);
+    border-bottom: 0.91px solid rgba(0, 166, 62, 1)
 }
 
 .security-settings__header h5{
-    color: rgba(0, 92, 36, 1)
+    color: rgba(13, 84, 43, 1);
 }
 
 .security-settings__header small {
-  color: rgba(0, 140, 56, 1);
+ color: rgba(0, 130, 54, 1);
 }
 
 .security-settings__header i {
-  color: rgba(0, 158, 63, 1);
+  color:  rgba(0, 166, 62, 1)
+}
+
+.security-settings small{
+    color:var(--color-text-secondary)
+}
+
+.security-settings card{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.password-requirements-card{
+    background-color:  rgba(236, 236, 240, 0.3) !important;
+    border:  rgba(236, 236, 240, 0.3) !important;
+    color: var(--color-text-secondary);
+}
+
+.security-alerts-card .tags{
+    border: 0.91px solid rgba(0, 0, 0, 0.1)
+}
+
+.security-settings .footer{
+    background: linear-gradient(90deg, #F0FDF4 0%, #ECFDF5 100%) !important;
+    border: 0.91px solid rgba(185, 248, 207, 1)
+}
+
+.security-settings .footer h6{
+    color: rgba(13, 84, 43, 1);
+}
+
+.security-settings .footer small{
+    color: rgba(0, 130, 54, 1);
+}
+
+.security-settings .footer i{
+    color:  rgba(0, 166, 62, 1);
+    background-color:rgba(220, 252, 231, 1);
+    width: 45px;
+    height: 45px;
+    align-content: center;
+    text-align: center;
+    border-radius: 50px;
 }

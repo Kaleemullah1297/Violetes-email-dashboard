@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../../test/test.css";
-import ProgressBar from "../../ProgressBar/ProgressBar";
+import "../../../components/AccountSettings/AccountSettingsSidebar/AccountSettingsSidebar";
+//import ProgressBar from "../../ProgressBar/ProgressBar";
 import "./profile.css";
+import SidebarProfileCard from "../card/SidebarProfileCard";
 
 function ProfileSettingsSidebar() {
   const [activeItem, setActiveItem] = useState("general");
@@ -10,7 +11,7 @@ function ProfileSettingsSidebar() {
   return (
     <>
       {/*Just for the large screen only*/}
-      <div className="d-flex  account-settings-sidebar">
+      <div className="d-flex d-md-block d-none  account-settings-sidebar pb-5">
         <div className="text-color-white" style={{ width: "250px" }}>
           <div className="mb-3 account-settings-sidebar-header">
             <div className="d-flex align-items-baseline ms-4 ">
@@ -39,12 +40,12 @@ function ProfileSettingsSidebar() {
                   className="nav-link active d-flex align-items-center text-dark"
                 >
                   <i className="fa-regular fa-user me-3"></i>
-                  <span>
+                  <span className="me-auto">
                     <p className="p-0 m-0">Personal Info</p>
-                    <small>Basic details & avator</small>
+                    <small className="sidebar-subtitle">Basic details & avator</small>
                   </span>
                   {activeItem === "general" && (
-                    <i className="fa-solid fa-chevron-right fa-xs ms-3"></i>
+                    <i className="fa-solid fa-chevron-right fa-xs "></i>
                   )}
                 </Link>
               </li>
@@ -62,10 +63,10 @@ function ProfileSettingsSidebar() {
                   <i className="bi bi-telephone me-3"></i>
                   <span>
                     <p className="p-0 m-0">Contact Details </p>
-                    <small className="text-xs">Phone & Working hours</small>
+                    <small className="text-xs sidebar-subtitle">Phone & Working hours</small>
                   </span>
                   {activeItem === "security" && (
-                    <i className="fa-solid fa-chevron-right fa-xs ms-2"></i>
+                    <i className="fa-solid fa-chevron-right fa-xs "></i>
                   )}
                 </Link>
               </li>
@@ -83,7 +84,7 @@ function ProfileSettingsSidebar() {
                   <i className="bi bi-building me-3"></i>
                   <span>
                     <p className="p-0 m-0">Work Information</p>
-                    <small>Job title & company</small>
+                    <small className="sidebar-subtitle">Job title & company</small>
                   </span>
                   {activeItem === "email" && (
                     <i className="fa-solid fa-chevron-right fa-xs ms-1"></i>
@@ -104,10 +105,10 @@ function ProfileSettingsSidebar() {
                   <i className="bi bi-palette me-3"></i>
                   <span>
                     <p className="p-0 m-0">Display Settings</p>
-                    <small>Appearence prefrences</small>
+                    <small className="sidebar-subtitle">Appearence prefrences</small>
                   </span>
                   {activeItem === "notifications" && (
-                    <i className="fa-solid fa-chevron-right fa-xs ms-2"></i>
+                    <i className="fa-solid fa-chevron-right fa-xs"></i>
                   )}
                 </Link>
               </li>
@@ -125,10 +126,10 @@ function ProfileSettingsSidebar() {
                   <i className="bi bi-eye me-3"></i>
                   <span>
                     <p className="p-0 m-0">Email Signatures</p>
-                    <small>Signature management</small>
+                    <small className="sidebar-subtitle">Signature management</small>
                   </span>
                   {activeItem === "privacy" && (
-                    <i className="fa-solid fa-chevron-right fa-xs ms-4"></i>
+                    <i className="fa-solid fa-chevron-right fa-xs"></i>
                   )}
                 </Link>
               </li>
@@ -146,7 +147,7 @@ function ProfileSettingsSidebar() {
                   <i className="bi bi-globe fs-5 me-3"></i>
                   <span>
                     <p className="p-0 m-0">Social Links</p>
-                    <small className="xs">Professional networks</small>
+                    <small className="sidebar-subtitle">Professional networks</small>
                   </span>
                   {activeItem === "storage" && (
                     <i className="fa-solid fa-chevron-right fa-xs"></i>
@@ -155,23 +156,7 @@ function ProfileSettingsSidebar() {
               </li>
             </ul>
 
-            <div className=" card mx-3 account-sttings-sidebar-footer m-4 p-4">
-              <div className="card-body m-0 p-0">
-                <p className="card-title text-center">Data Storage</p>
-                <div className="d-flex justify-content-between mb-2">
-                  <small>Storage Used</small>
-                  <small>56%</small>
-                </div>
-                <span className="progress-bar">
-                  <ProgressBar />
-                </span>
-                <div className="d-flex justify-content-between mt-2">
-                  <small>8.4 GB</small>
-                  <small>15 GB</small>
-                </div>
-                <hr />
-              </div>
-            </div>
+            <SidebarProfileCard/>
           </div>
         </div>
       </div>

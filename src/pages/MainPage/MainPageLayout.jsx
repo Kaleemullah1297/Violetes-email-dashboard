@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import MainSideBar from "../../components/MainSidebar/MainSidebar";
+import MainSideBar from "../../components/DashboardSidebar/DashboardSidebar";
 import Calender from "./Calender/Calender";
 import TaskPage from "./Task/Task";
 import Notes from "./Notes/Notes";
@@ -13,6 +13,7 @@ import Drafts from "./Drafts/Drafts";
 import DeletedMails from "./DeletedMails/DeletedMails";
 import Archieve from "./Archieves/Archieves";
 import JunkEmails from "./JunkEmails/JunkEmails";
+import Mock from '../../components/mock'
 
 function MainPageLayout() {
   return (
@@ -20,7 +21,7 @@ function MainPageLayout() {
       <div className="d-flex">
         <MainSideBar />
         <div className="flex-grow-1">
-          <DashboradNavBar />
+          <Mock/>
           <Routes>
             <Route index element={<Inbox />} />
             <Route path="calender" element={<Calender />} />

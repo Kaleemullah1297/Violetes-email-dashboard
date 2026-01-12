@@ -1,6 +1,14 @@
-.social-links-alert{
+.social_links{
+    border-left: 3.62px solid  rgba(252, 206, 232, 1);
+}
+
+.social_links-header{
     background-color:  rgba(253, 242, 248, 1);
     border-bottom: 0.91px solid rgba(252, 206, 232, 1)
+}
+
+.social_links-header h5,small,i{
+    color: rgba(17, 46, 78, 1);
 }
 
 .social-links-footer{

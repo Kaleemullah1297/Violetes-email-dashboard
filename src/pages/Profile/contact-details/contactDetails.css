@@ -1,5 +1,5 @@
 .working-hours-icon{
-    background: var(--navbar-background);
+    background: var(--color-primary-dark);
     color:white;
     border-radius: 16px;
     box-shadow: 
@@ -19,3 +19,39 @@
   color: rgba(25, 60, 184, 1);
   font-weight: 500;
 }
+
+.security .icon-2{
+    color:  rgba(255, 255, 255, 1);
+    background: linear-gradient(0deg, #1E3A5F, #1E3A5F);
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width:45px;
+    height:45px;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.security label{
+  font-weight: 600;
+}
+
+.contact_information-header{
+  background: rgba(240, 253, 244, 1);
+  border-bottom: 0.91px solid rgba(185, 248, 207, 1)
+}
+
+.contact_information-header h5{
+  color: rgba(13, 84, 43, 1);
+}
+
+.contact_information-header small{
+  color: rgba(0, 130, 54, 1);
+}
+
+.contact_information-header i{
+  color:  rgba(0, 166, 62, 1)
+}
+
+.contact_information{
+  border-left: 3.62px solid rgba(0, 166, 62, 1);
+}
+

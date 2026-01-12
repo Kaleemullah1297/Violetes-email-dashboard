@@ -9,17 +9,17 @@ function Security() {
   }, [time]);
   return (
     <>
-      <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
-        <div className="security">
-          <div className="mb-5 py-3 d-flex align-items-center security__general-settings-header">
+      <div className="px-4 pt-4 mt-md-0 mt-3 me-md-0 me-1 mb-5 pb-5">
+        <div className="general_settings">
+          <div className="mb-5 py-3 d-flex align-items-center general_settings-header">
             <i className="icon-1 fa-regular fa-user me-3 ms-4"></i>
             <span>
               <h5 className="m-0 p-0 ">General Settings</h5>
               <small>Configure your basic prefereces</small>
             </span>
           </div>
-          <div className="mx-sm-5 mx-4 pe-sm-2 pe-0">
-            <div className="card mb-5 py-4 security__general-settings">
+          <div className="mx-sm-4 mx-4 pe-sm-2 pe-0">
+            {/* <div className="card mb-5 py-4 security__general-settings">
               <div className="card-body">
                 <div className="text-center">
                   <i className="icon-2 fa-regular fa-user  mb-3"></i>
@@ -33,18 +33,18 @@ function Security() {
                   </small>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/*Regional Language Preferences*/}
-            <div className="card mb-5  pb-3 language__preference main-card">
-              <div className="card-body">
-                <div className="mb-5 d-flex align-items-center">
+            <div className="card mb-5 pb-3 language__preference main-card card-1">
+              <div className="card-body m-0 p-0 p-4">
+                <div className="mb-4                             d-flex align-items-center">
                   <i className="bi bi-globe icon-2 me-2 icon"></i>
                   <span>
-                    <h5 className="card-title m-0">
+                    <h4 className="card-title m-0 fw-bold">
                       Regional & Language Settings
-                    </h5>
-                    <small>Customize your locale prefereces</small>
+                    </h4>
+                    <p>Customize your locale prefereces</p>
                   </span>
                 </div>
                 <div className="row">
@@ -53,7 +53,7 @@ function Security() {
                       <h6>Language</h6>
                     </label>
                     <select
-                      className="form-select mb-1"
+                      className="form-select mb-2"
                       value={time}
                       onChange={(e) => setTime(e.target.value)}
                     >
@@ -67,7 +67,7 @@ function Security() {
                     <label htmlFor="" className="form-label ">
                       <h6>Time Zone</h6>
                     </label>
-                    <select className="form-select mb-1">
+                    <select className="form-select mb-2">
                       <option
                         defaultValue={time}
                         onChange={(event) => setTime(event.target.value)}
@@ -86,8 +86,8 @@ function Security() {
             </div>
 
             {/*Theme Preferences Reply*/}
-            <div className="card mb-5 main-card">
-              <div className="card-body">
+            <div className="card mb-5 card-2 pb-3">
+              <div className="card-body m-0 p-0">
                 <div className="mb-5 d-flex align-items-center">
                   <i className="bi bi-palette me-2 icon"></i>
                   <span>
@@ -101,16 +101,16 @@ function Security() {
                     <h6>Theme Preference</h6>
                   </label>
                   <select name="" id="" className="form-select mb-2">
-                    <option defaultValue="system">System Default</option>
+                    <option defaultValue="system">💻 System Default</option>
                     <option value="mobile">Mobile</option>
                   </select>
                   <small>
                     Choose how Violetis Mail appears across all your devices
                   </small>
                 </div>
-                <div className="card card-end m-0 p-0">
+                <div className="card adaptive-display-card">
                   <div className="card-body d-flex align-items-baseline">
-                    <i className="bi bi-palette me-2"></i>
+                    <i className="bi bi-palette  me-2"></i>
                     <span>
                       <h6 className="card-title m-0">Adaptive Display</h6>
                       <small>
@@ -124,8 +124,8 @@ function Security() {
             </div>
 
             {/*Auto Reply Settings Card*/}
-            <div className="card mb-5 main-card">
-              <div className="card-body">
+            <div className="card mb-5 main-card pb-3">
+              <div className="card-body m-0 p-0">
                 <div className="d-flex align-items-center mb-5">
                   <i className="fa-solid fa-robot me-2 icon"></i>
                   <span>
@@ -153,7 +153,7 @@ function Security() {
                   </small>
                 </div>
 
-                <div className="card card-end m-0 p-0">
+                <div className="card card-end m-0 p-0 smart-auto-reply-card">
                   <div className="card-body d-flex align-items-baseline">
                     <i className="fa-solid fa-robot me-2"></i>
                     <span>

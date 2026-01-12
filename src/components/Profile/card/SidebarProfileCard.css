@@ -1,0 +1,27 @@
+.sidebarprofile-card-header img{
+    width:75px;
+    height: 75px;
+   background: linear-gradient(180deg, #112E4E 0%, #1E3A5F 100%);
+    border-radius: 50%;
+    border: 3.62px solid rgba(229, 231, 235, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.sidebarprofile-card-header h5{
+    border: 3.62px solid rgba(229, 231, 235, 1);
+    width:75px;
+    height: 75px;
+    background: linear-gradient(180deg, #112E4E 0%, #1E3A5F 100%);
+    border-radius: 50%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sidebarprofile-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

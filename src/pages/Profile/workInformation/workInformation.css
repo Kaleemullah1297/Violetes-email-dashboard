@@ -17,9 +17,34 @@
 .workInformation-card-icon{
     background: linear-gradient(0deg, #112E4E, #112E4E);
     color: rgba(255, 255, 255, 1);
+    width: 45px;
+    height:45px;
+    border-radius: 10px;
 }
 
 .work-information-span label{
     font-weight: 600;
     color: rgba(54, 65, 83, 1);
+}
+
+.work_information-header{
+    background-color: rgba(250, 245, 255, 1);
+    border-bottom: 0.91px solid rgba(233, 212, 255, 1)
+}
+
+.work_information-header h5{
+    color: rgba(89, 22, 139, 1);
+}
+
+.work_information-header small{
+    color: rgba(130, 0, 219, 1);
+}
+
+.work_information-header i{
+    color: 2px solid rgba(152, 16, 250, 1)
+}
+
+.work_information{
+    border-left:3.62px solid rgba(152, 16, 250, 1);
+
 }

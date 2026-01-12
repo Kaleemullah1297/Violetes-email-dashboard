@@ -1,14 +1,16 @@
+.display-settings{
+  border-left: 3.62px solid  rgba(255, 214, 167, 1);
+}
+
 .display-settings_header{
     background-color: rgba(255, 247, 237, 1);
     border-bottom: 0.91px solid  rgba(255, 214, 167, 1);
 }
 
-.space-large{
-    margin-bottom: 50px;
-    margin-top: 50px;
+.display-settings_header h5,small,i{
+  color: rgba(17, 46, 78, 1);
 }
 
 .form-check-input:checked {
   background-color:  rgba(17, 46, 78, 1);/* track when active */
-  border-top: 0.91px solid rgba(0, 0, 0, 1)
 }

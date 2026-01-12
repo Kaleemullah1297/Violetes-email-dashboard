@@ -1,6 +1,7 @@
 .storage-settings{
-    border-left: 3.62px solid rgba(240, 177, 0, 1)
+    border-left: 3.62px solid  rgba(208, 135, 0, 1);
 }
+
 .storage-settings__header{
     background-color: rgba(254, 252, 232, 1);
     border-bottom: 0.91px solid rgba(255, 240, 133, 1)

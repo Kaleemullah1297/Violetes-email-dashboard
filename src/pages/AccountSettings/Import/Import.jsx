@@ -3,7 +3,7 @@ import "./Import.css";
 function Import() {
   return (
     <>
-      <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
+      <div className="px-4 pt-4 mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5 import-settings-container">
         <div className="div import-settings">
           {/*Main Header*/}
           <div className="mb-4 py-3 d-flex align-items-center import-settings__header">
@@ -39,8 +39,8 @@ function Import() {
                       Import your emails and data from other providers
                     </small>
                   </span>
-                  <div>
-                    <i className="bi bi-shield me-3 fs-6"></i>
+                  <div className="tag px-1">
+                    <i className="bi bi-shield me-2 fs-6"></i>
                     <small>Encrypted Transfer</small>
                   </div>
                 </div>
@@ -53,7 +53,9 @@ function Import() {
                         <i className="fa-regular fa-envelope fs-4 me-3"></i>
                       </div>
                       <span>
-                        <p className="card-title m-0 p-0">Import From Gmail</p>
+                        <h6 className="card-title m-0 p-0">
+                          Import From Gmail
+                        </h6>
                         <small className="d-block">
                           Import emails, contacts, labels and filters
                         </small>
@@ -84,9 +86,9 @@ function Import() {
                         <i className="fa-regular fa-envelope fs-4 me-3"></i>
                       </span>
                       <span>
-                        <p className="card-title m-0 p-0">
+                        <h6 className="card-title m-0 p-0">
                           Import From Outlook
-                        </p>
+                        </h6>
                         <small className="d-block">
                           Import emails, calendar, and folder structure
                         </small>
@@ -117,9 +119,9 @@ function Import() {
                         <i className="fa-regular fa-envelope fs-4 me-3"></i>
                       </span>
                       <span>
-                        <p className="card-title m-0 p-0">
+                        <h6 className="card-title m-0 p-0">
                           Import from Yahoo Mail
-                        </p>
+                        </h6>
                         <small className="d-block">
                           Import emails and contacts with full sync
                         </small>
@@ -150,7 +152,9 @@ function Import() {
                         <i className="fa-regular fa-file-lines fs-3 me-3"></i>
                       </span>
                       <span>
-                        <p className="card-title m-0 p-0">Import from Files</p>
+                        <h6 className="card-title m-0 p-0">
+                          Import from Files
+                        </h6>
                         <small className="d-block">
                           Upload email archive files for bulk import
                         </small>
@@ -181,9 +185,9 @@ function Import() {
                         <i className="fa-regular fa-envelope fs-4 me-3"></i>
                       </span>
                       <span>
-                        <p className="card-title m-0 p-0">
+                        <h6 className="card-title m-0 p-0">
                           Other Email Providers
-                        </p>
+                        </h6>
                         <small className="d-block">
                           Import from any IMAP/POP3 compatible provider
                         </small>
@@ -234,8 +238,8 @@ function Import() {
                     </span>
                     <small>Download your data for backup or migration</small>
                   </span>
-                  <div>
-                    <i className="bi bi-shield me-3 fs-6"></i>
+                  <div className="tag px-1">
+                    <i className="bi bi-shield me-2 fs-6"></i>
                     <small>Secure Download</small>
                   </div>
                 </div>
@@ -300,7 +304,9 @@ function Import() {
                         <div className="mb-3 d-flex align-items-center">
                           <i className="bi bi-gear me-2 fs-4 text-center"></i>
                           <span>
-                            <h6 className="card-title m-0 p-0">Account Settings</h6>
+                            <h6 className="card-title m-0 p-0">
+                              Account Settings
+                            </h6>
                             <small className="">All prefrences</small>
                           </span>
                         </div>
@@ -312,18 +318,24 @@ function Import() {
                     </div>
                   </div>
                 </div>
-                <div className="card">
+
+                {/*Complete Data export Card*/}
+                <div className="card p-3 export-complete-data">
                   <div className="card-body m-0 p-0">
                     <div className="d-flex align-items-center justify-content-between">
                       <span>
                         <h6 className="card-title m-0 p-0">
                           Complete Data Export
                         </h6>
-                        <small>
+                        <small className="text-muted">
                           Export all your data in one comprehensive package
                         </small>
                       </span>
-                      <p>Recommended</p>
+                      <span className="recommended-tag">
+                        <small className="recommended-tag m-0 px-1">
+                          Recommended
+                        </small>
+                      </span>
                     </div>
                     <div className="mt-3 d-flex justify-content-between align-items-center">
                       <span>
@@ -336,7 +348,7 @@ function Import() {
                         </small>
                       </span>
                       <button className="btn" type="button">
-                        Export All
+                        <i className="bi bi-download me-2"></i>Export All
                       </button>
                     </div>
                   </div>
@@ -344,7 +356,7 @@ function Import() {
               </div>
             </div>
 
-            <div className="card mt-4">
+            <div className="card mt-4 import-export-footer">
               <div className="card-body m-0 p-0 p-4">
                 <div className="d-flex align-items-center justify-content-between">
                   <span>
@@ -355,8 +367,8 @@ function Import() {
                       Let our AI help you migrate from your current email
                       provider with zero data loss and optimized organization.
                     </small>
-                    <button className="btn" type="button">
-                      Start Smart Migration
+                    <button className="btn disabeled m-0 p-0 px-1 me-2" type="button">
+                      ✨ Start Smart Migration
                     </button>
                     <small>
                       ✨ Automatically organizes and deduplicates your data

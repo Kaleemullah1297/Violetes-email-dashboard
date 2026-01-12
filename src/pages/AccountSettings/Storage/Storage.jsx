@@ -5,23 +5,18 @@ import ProgressBar from "../../../components/ProgressBar/ProgressBar";
 function Storage() {
   return (
     <>
-      <div className="card mt-md-0 mt-3 me-md-0 me-3 mb-5">
+      <div className="px-4 pt-4 mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5">
         <div className="div mb-5 storage-settings">
           {/*Header*/}
           <div className="mb-4 py-3 d-flex align-items-center storage-settings__header">
-            <i className="fa-regular fa-hard-drive me-3 ms-4"></i>
+            <i className="fa-regular fa-hard-drive me-3 ms-4 fs-5"></i>
             <span>
               <h5 className="m-0 p-0 ">Storage Management</h5>
               <small>Monitor and manage your storage</small>
             </span>
           </div>
 
-          <div className="ms-4 me-4">
-            <div className="mb-4">
-              <h5>Storage Management</h5>
-              <small>Monitor your storage usage and manage your data</small>
-            </div>
-
+          <div className="mx-5">
             <div className="card">
               <div className="card-body">
                 <span className="d-flex justify-content-between mb-5">
@@ -35,7 +30,7 @@ function Storage() {
               </div>
             </div>
 
-            <div className="row mt-5 mb-5">
+            <div className="row mt-4 mb-4">
               <div className="col-md-6 col-12">
                 <div className="card">
                   <div className="card-body">
@@ -56,16 +51,18 @@ function Storage() {
               </div>
             </div>
 
-            <span className="d-flex d-flex justify-content-center mb-3 storage-button">
-              <button className="btn btn-outline-primary w-100">
-                Clean Up Storage
-              </button>
-            </span>
-            <span className="d-flex justify-content-center w-100 storage-button">
-              <button className="btn btn-outline-primary w-100">
-                Upgrade Storage
-              </button>
-            </span>
+            <div className="row">
+              <div className="col-6">
+                <button className="btn btn-outline-primary w-100 text center">
+                  Upgrade Storage
+                </button>
+              </div>
+              <div className="col-6">
+                <button className="btn btn-outline-primary w-100 text-center">
+                  Upgrade Storage
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

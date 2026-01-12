@@ -6,6 +6,7 @@
   --color-primary: rgba(17, 46, 78, 1); /* main brand color (buttons, headings, emphasis) */
   --color-primary-gradient: linear-gradient(180deg, #112E4E 0%, #1E3A5F 100%);
   --color-primary-soft: rgba(17, 46, 78, 0.2); /* progress bar / subtle fills */
+  --color-primary-dark: linear-gradient(0deg, #112E4E, #112E4E);
   --color-primary-ultra-soft: linear-gradient(
     135deg,
     rgba(17, 46, 78, 0.063) 0%,

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../../components/Profile/Navbar/Navbar";
-import Test from "../../components/test/test";
+import Test from "../../components/AccountSettings/AccountSettingsSidebar/AccountSettingsSidebar";
 import General from "./General/General";
 import SecurityAndPrivacy from "./Security/Security";
 import EmailAccounts from "./EmailAccounts/EmailAccounts";
@@ -12,7 +12,7 @@ import Import from "./Import/Import";
 function AccountSettingsLayout() {
   return (
     <>
-      <Navbar />
+      <Navbar heading="Account Settings" description="Configure your preferences and security"/>
       <div>
         <div className="d-flex">
           <Test />

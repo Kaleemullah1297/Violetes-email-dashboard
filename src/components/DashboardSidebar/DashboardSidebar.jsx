@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import "./Mainsidebar.css";
+import "./Dashboardsidebar.css";
 import logo from "../../assets/logo.png";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import DarkThemeContext from "../../context/DarkThemeContext";
@@ -14,7 +14,7 @@ function MainSidebar() {
           <img src={logo} alt="Main logo" className="img-fluid w-75" />
         </div>
 
-        <div className="main-sidebar-links">
+        <div className="main-sidebar-links h-100">
           <ul className="nav  mx-1">
             <li className="nav-item w-100 mb-1 mt-2">
               <NavLink

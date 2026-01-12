@@ -83,7 +83,7 @@ function AiHub() {
                 data-bs-toggle="tab"
                 data-bs-target="#insights"
               >
-                <i class="fa-solid fa-chart-column me-1"></i>
+                <i className="fa-solid fa-chart-column me-1"></i>
                 <span>Insights</span>
               </button>
             </li>

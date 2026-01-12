@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "./test.css";
-import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import './AccountSettingSidebar.css'
+import ProgressBar from "../../ProgressBar/ProgressBar";
 
 function Test() {
   const [activeItem, setActiveItem] = useState("general");
@@ -131,7 +131,6 @@ function Test() {
                   )}
                 </Link>
               </li>
-
               <li
                 className={`test-li nav-item d-flex align-items-center mb-3 ps-1 w-100 py-2 ${
                   activeItem === "storage" ? "active" : ""
@@ -140,15 +139,19 @@ function Test() {
               >
                 <Link
                   to="/account-settings/storage"
-                  className="nav-link active d-flex align-items-center text-dark"
+                  className="nav-link d-flex align-items-center text-dark w-100"
                 >
                   <i className="fa-regular fa-hard-drive me-3"></i>
-                  <span>
+
+                  <span className="d-flex flex-column">
                     <p className="p-0 m-0">Storage</p>
-                    <small className="xs">Usage & management</small>
+                    <small className="sidebar-subtitle">
+                      Usage & management
+                    </small>
                   </span>
+
                   {activeItem === "storage" && (
-                    <i className="fa-solid fa-chevron-right fa-xs"></i>
+                    <i className="fa-solid fa-chevron-right fa-xs ms-auto"></i>
                   )}
                 </Link>
               </li>
@@ -177,19 +180,30 @@ function Test() {
 
             <div className=" card mx-3 account-sttings-sidebar-footer m-4 p-4">
               <div className="card-body m-0 p-0">
-                <p className="card-title text-center">Data Storage</p>
-                <div className="d-flex justify-content-between mb-2">
-                  <small>Storage Used</small>
-                  <small>56%</small>
+                <h6 className="card-title text-center"> <i className="fa-solid fa-circle fa-2xs me-3 account-setting-footer-icon"></i>Data Storage</h6>
+                <div className="d-flex justify-content-between mb-2 mt-4">
+                  <small className="small-head">Storage Used</small>
+                  <h6>56%</h6>
                 </div>
                 <span className="progress-bar">
-                  <ProgressBar />
+                  <ProgressBar progress={70}/>
                 </span>
                 <div className="d-flex justify-content-between mt-2">
                   <small>8.4 GB</small>
                   <small>15 GB</small>
                 </div>
                 <hr />
+
+                <div className="d-flex justify-content-between">
+                  <div className="text-center">
+                    <p className="m-0 p-0">Accounts</p>
+                    <h6 className="lh-1.5">2</h6>
+                  </div>
+                  <div className="text-center">
+                    <p className="m-0 p-0">2FA</p>
+                    <h6 className="lh-1.5">2</h6>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
