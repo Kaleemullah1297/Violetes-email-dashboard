@@ -1,0 +1,101 @@
+/* ------------------------------------------- */
+/* Main layout wrapper */
+.main-layout {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Disable background scroll when sidebar open */
+.main-layout.sidebar-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Content area always flex-grow */
+.content-area {
+  flex-grow: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Overlay for mobile & tablet */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* Show overlay when sidebar is open */
+.main-layout.sidebar-open .overlay {
+  display: block;
+}
+
+/* Sidebar base */
+.main-layout .dashboard-sidebar {
+  transition: transform 0.35s ease;
+  z-index: 999;
+  -webkit-overflow-scrolling: touch;
+  background-color: #ffffff;
+  box-shadow: 4px 0 12px rgba(0,0,0,0.2);
+  isolation: isolate;
+}
+
+/* ------------------------------------------- */
+/* Desktop: lg (≥992px) */
+@media (min-width: 992px) {
+  .main-layout {
+    flex-direction: row;
+    overflow: visible;
+  }
+
+  .main-layout .dashboard-sidebar {
+    position: relative;
+    transform: translateX(0);
+    width: 250px;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .main-layout .content-area {
+    transform: none;
+  }
+}
+
+/* ------------------------------------------- */
+/* Tablet + Mobile (≤991.98px) */
+@media (max-width: 991.98px) {
+  .main-layout {
+    flex-direction: row;
+  }
+
+  .main-layout .dashboard-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 270px;
+    transform: translateX(-110%);
+    overflow-y: auto;
+    z-index: 1100;
+  }
+
+  .main-layout.sidebar-open .dashboard-sidebar {
+    transform: translateX(0);
+  }
+
+  /* Content does NOT move */
+  .main-layout.sidebar-open .content-area {
+    transform: none;
+  }
+}
+
+/* Optional: smooth scrolling inside sidebar */
+.dashboard-sidebar {
+  -webkit-overflow-scrolling: touch;
+}

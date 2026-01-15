@@ -78,43 +78,45 @@ function Inbox() {
 
   return (
     <>
-      <div className="d-flex justify-content-between align-items-center mt-2 inbox-page">
+      <div className="d-flex justify-content-between align-items-center inbox-page">
         <span>
           <button className="btn" type="button">
-            Essential
+            <small>Essential</small>
           </button>
           <button className="btn" type="button">
-            Community
+            <small>Community</small>
           </button>
           <button className="btn" type="button">
-            Highlights
+            <small>Highlights</small>
           </button>
           <button className="btn" type="button">
-            Other Mail
+            <small>Other Mail</small>
           </button>
         </span>
-        <i className="fa fa-ellipsis-h" aria-hidden="true"></i>
+        <i className="fa fa-ellipsis-h me-3" aria-hidden="true"></i>
       </div>
 
-      <small className="ms-3">Pulse Inbox (AI Priority)</small>
+      <small className="ms-3 inbox-page">Pulse Inbox (AI Priority)</small>
       <hr />
-      {users?.length > 0 ? (
-        users.map((file, index) => (
-          <InboxComponent
-            key={index}
-            name={file.name}
-            subject={file.subject}
-            description={file.description}
-            type={file.type}
-            date={file.date}
-            displayName={file.displayName}
-            priority={file.priority}
-            imgSrc={file.imgSrc}
-          />
-        ))
-      ) : (
-        <p className="text-muted ms-3">No messages found</p>
-      )}
+      <div className="inbox-page">
+        {users?.length > 0 ? (
+          users.map((file, index) => (
+            <InboxComponent
+              key={index}
+              name={file.name}
+              subject={file.subject}
+              description={file.description}
+              type={file.type}
+              date={file.date}
+              displayName={file.displayName}
+              priority={file.priority}
+              imgSrc={file.imgSrc}
+            />
+          ))
+        ) : (
+          <p className="text-muted ms-3">No messages found</p>
+        )}
+      </div>
     </>
   );
 }

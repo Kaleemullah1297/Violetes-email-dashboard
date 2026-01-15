@@ -5,25 +5,57 @@ import logo from "../../../assets/logo.png";
 import ProgressBar from "../../ProgressBar/ProgressBar";
 import DarkThemeContext from "../../../context/DarkThemeContext";
 
-function DashboardSidebar() {
+function DashboardSidebar({ isOpen, onClose }) {
   const { theme, toggleTheme } = useContext(DarkThemeContext);
+
+  // Close sidebar when any link is clicked
+  const handleLinkClick = () => {
+    if (onClose) onClose();
+  };
+
   return (
     <>
-      <div className="main-sidebar d-lg-block d-none">
-        <div className="d-flex justify-content-center p-4">
-          <img src={logo} alt="Main logo" className="img-fluid w-75" />
+      <div
+        className={`dashboard-sidebar main-sidebar ${
+          isOpen ? "open" : ""
+        } d-lg-block`}
+      >
+
+        
+        {/* Close button for mobile */}
+        <div className="mobile-close-btn text-end p-2">
+           <img src={logo} alt="Main logo" className="img-fluid dashboard-sidebar-logo me-lg-5 me-4" />
+          <span
+            className="sidebar-close-icon me-3  d-lg-none"
+            onClick={onClose}
+            style={{
+              fontSize: "1.5rem",
+              cursor: "pointer",
+              userSelect: "none", // prevents text selection
+              color: "#000", // color of the cross
+            }}
+          >
+            &times;
+          </span>
         </div>
 
+       
+        <div className="d-flex align-items-center justify-content-center py-5">
+         
+        </div>
+
+        {/* Sidebar Links */}
         <div className="main-sidebar-links h-100">
-          <ul className="nav  mx-1">
+          <ul className="nav mx-1">
             <li className="nav-item w-100 mb-1 mt-2">
               <NavLink
                 to="/dashboard/inbox"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-envelope me-3"></i>
                 <span className="span-1">Inbox</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -31,10 +63,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/sent-items"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-paper-plane me-3"></i>
                 <span className="span-1">Sent Items</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -42,10 +75,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/drafts"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-envelope me-3"></i>
                 <span className="span-1">Drafts</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -53,10 +87,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/deleted-items"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-trash-can me-3"></i>
                 <span className="span-1">Deleted Items</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -64,10 +99,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/archieve"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="bi bi-archive me-3"></i>
                 <span className="span-1">Archieve</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -75,24 +111,23 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/junk-emails"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-flag me-3"></i>
                 <span className="span-1">Junk Emails</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
-
-            {/*Calender*/}
 
             <li className="nav-item w-100 mb-1">
               <NavLink
                 to="/dashboard/calender"
-                href="#"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-calendar me-3"></i>
                 <span className="span-1">Calender</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -100,10 +135,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/people"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="bi bi-people me-3"></i>
                 <span className="span-1">People</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -111,10 +147,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/tasks"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-envelope me-3"></i>
                 <span className="span-1">Tasks</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -122,10 +159,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/notes"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-regular fa-file-lines me-3"></i>
                 <span className="span-1">Notes</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -133,10 +171,11 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/newsletters"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-solid fa-rss me-3"></i>
-                <span className="span-1">Newletters</span>
-                <span className=" ms-auto span-2">12</span>
+                <span className="span-1">Newsletters</span>
+                <span className="ms-auto span-2">12</span>
               </NavLink>
             </li>
 
@@ -148,6 +187,7 @@ function DashboardSidebar() {
               <NavLink
                 to="/dashboard/ai-hub"
                 className="nav-link d-flex flex-row align-items-baseline"
+                onClick={handleLinkClick}
               >
                 <i className="fa-solid fa-rss me-3"></i>
                 <span className="span-1">AI Hub</span>
@@ -158,7 +198,8 @@ function DashboardSidebar() {
 
           <hr />
 
-          <div className="d-flex align-items-center ms-3">
+          {/* Storage Progress */}
+          <div className="d-flex align-items-center ms-3 storage-link">
             <i className="bi bi-hdd me-3"></i>
             <div className="d-flex flex-column">
               <span>Mail Storage</span>
@@ -171,6 +212,7 @@ function DashboardSidebar() {
 
           <hr />
 
+          {/* Dark Mode Toggle */}
           <div className="d-flex justify-content-between">
             <label className="form-label ms-3">Dark Mode</label>
             <div className="form-check form-switch ">

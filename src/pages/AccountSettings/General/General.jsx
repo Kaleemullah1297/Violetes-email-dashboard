@@ -38,7 +38,7 @@ function Security() {
             {/*Regional Language Preferences*/}
             <div className="card mb-5 pb-3 language__preference main-card card-1">
               <div className="card-body m-0 p-0 p-4">
-                <div className="mb-4                             d-flex align-items-center">
+                <div className="mb-4 d-flex align-items-center">
                   <i className="bi bi-globe icon-2 me-2 icon"></i>
                   <span>
                     <h4 className="card-title m-0 fw-bold">
@@ -87,7 +87,7 @@ function Security() {
 
             {/*Theme Preferences Reply*/}
             <div className="card mb-5 card-2 pb-3">
-              <div className="card-body m-0 p-0">
+              <div className="card-body m-0 p-0 p-4">
                 <div className="mb-5 d-flex align-items-center">
                   <i className="bi bi-palette me-2 icon"></i>
                   <span>
@@ -125,7 +125,7 @@ function Security() {
 
             {/*Auto Reply Settings Card*/}
             <div className="card mb-5 main-card pb-3">
-              <div className="card-body m-0 p-0">
+              <div className="card-body m-0 p-0 p-4">
                 <div className="d-flex align-items-center mb-5">
                   <i className="fa-solid fa-robot me-2 icon"></i>
                   <span>

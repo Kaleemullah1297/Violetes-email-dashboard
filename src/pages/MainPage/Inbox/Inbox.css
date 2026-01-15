@@ -1,0 +1,9 @@
+.inbox-page{
+    background-color: var(--color-surface-base);
+}
+
+@media (max-width: 767.98px) {
+   .inbox-page small{
+    font-size: 12px;
+   }
+}

@@ -14,7 +14,7 @@ function SocialLinks() {
   };
   return (
     <>
-      <div className="px-4 pt-4 mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5 social-links-card">
+      <div className="px-4 pt-4 mt-md-0 mt-3 me-md-0 me-3 mb-5 pb-5 social-links-container h-100">
         <div className="div social_links">
           <div className="mb-4 py-3 d-flex align-items-center social_links-header">
             <i className="bi bi-globe icon-1 fs-5 me-3 ms-4"></i>
@@ -24,7 +24,7 @@ function SocialLinks() {
             </span>
           </div>
 
-          <div className="mx-5">
+          <div className="mx-4">
            
 
             <form onSubmit={handleSubmit}>
@@ -39,7 +39,7 @@ function SocialLinks() {
                     </span>
 
                     {/*Body 1*/}
-                    <div className="card-body mb-3">
+                    <div className="card-body mb-3 m-0 p-0">
                       {/*First Input Field*/}
                       <div className="mb-3">
                         <div className="social-links align-items-center mb-2">
@@ -49,7 +49,7 @@ function SocialLinks() {
                           </label>
                         </div>
                         <span className="d-flex align-items-center">
-                          <i className="bi bi-file-earmark-plus me-3"></i>
+                          <i className="bi bi-box-arrow-up-right me-2"></i>
                           <input
                             type="text"
                             value={linkedIn}
@@ -70,7 +70,7 @@ function SocialLinks() {
                           </label>
                         </div>
                         <span className="d-flex align-items-center">
-                          <i className="bi bi-file-earmark-plus me-3"></i>
+                          <i className="bi bi-box-arrow-up-right me-2"></i>
                           <input
                             type="text"
                             value={twitter}
@@ -89,7 +89,7 @@ function SocialLinks() {
                           </label>
                         </div>
                         <span className="d-flex align-items-center">
-                          <i className="bi bi-file-earmark-plus me-3"></i>
+                          <i className="bi bi-box-arrow-up-right me-2"></i>
                           <input
                             type="text"
                             value={gitHub}

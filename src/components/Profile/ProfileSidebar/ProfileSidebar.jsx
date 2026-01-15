@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../../AccountSettings/AccountSettingsSidebar/AccountSettingsSidebar";
-//import ProgressBar from "../../ProgressBar/ProgressBar";
 import "./ProfileSidebar.css";
 import SidebarProfileCard from "../card/SidebarProfileCard";
 

@@ -32,7 +32,7 @@
 }
 
 body.dark {
-  --bg-color: #1f1f1f;
+  --color-surface-base: #1f1f1f;
   --text-color: #f0f0f0;
 }
 
@@ -42,11 +42,11 @@ body {
   color: var(--text-color);
 }
 
-.form-control.form-control {
+.form-control.form-control{
   background-color: var(--color-surface-input);
   color: var(--color-text-secondary);
   border: 1.81px solid rgba(229, 231, 235, 1);
-  border-radius: 14px;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -62,7 +62,7 @@ body {
 
 .card.card{
     border-radius: 14px;
-    /* padding-top: 24px; */
+    padding-top: 24px; 
     padding-right:24px;
     padding-left: 24px;
     padding-bottom: 0.91px;
@@ -72,6 +72,19 @@ body {
 
 small.small{
   color:var(--color-text-secondary)
+}
+
+.icon-design{
+    background: linear-gradient(0deg, #1E3A5F, #1E3A5F);
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width:45px;
+    height:45px;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.icon-design i{
+color:  rgba(255, 255, 255, 1);
 }
 
 

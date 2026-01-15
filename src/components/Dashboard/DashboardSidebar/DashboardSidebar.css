@@ -37,3 +37,48 @@
     background-color: light;
     border: 1px white;
 }
+
+.sidebar-close-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: #000; /* Change as needed */
+}
+
+.sidebar-close-icon:hover {
+  color: #007bff; /* Optional hover effect */
+}
+
+.mobile-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  line-height: 1;
+  z-index: 1100;
+}
+
+.sidebar-close-icon {
+  font-size: 35px;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  display: inline-block;
+  line-height: 1;
+}
+
+.dashboard-sidebar-logo{
+  width: 120px;
+  height: 63px;
+}
+
+.dashboard-sidebar-container{
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
+.storage-link small{
+  color:rgba(255, 255, 255, 1);
+}

@@ -57,7 +57,7 @@ function SettingsDropdown() {
           <div className="dropdown-section">
             <div className="px-2">
               <span className="d-flex align-items-baseline mb-1">
-                <i className="bi bi-gear me-2"></i>
+                <i className="bi bi-gear me-2 gear-icon"></i>
                 <h6 className="dropdown-title m-0">Quick Settings</h6>
               </span>
               <small className="text-muted d-block mb-2">
@@ -200,7 +200,7 @@ function SettingsDropdown() {
           {/* ACCOUNT */}
           <div className="dropdown-section m-0 p-0">
             <NavLink
-              to="/profile"
+              to="/account-settings"
               className="dropdown-item d-flex align-items-center"
             >
               <i className="fa-regular fa-user me-2 fs-6"></i>

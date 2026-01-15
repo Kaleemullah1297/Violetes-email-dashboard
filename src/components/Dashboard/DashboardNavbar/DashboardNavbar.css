@@ -1,15 +1,44 @@
-.mock-button{
+.dashboard-navbar .new-mail-button{
     white-space: nowrap;
+    background-color: #112E4E;
+    box-shadow: 0px 2px 4px -2px #0000001A, 0px 4px 6px -1px #0000001A;
+    color:#FFFFFF
 }
 
-.navbar .dropdown-menu {
+.dashboard-navbar .new-mail-button i{
+  color: #FFFFFF;
+}
+
+.dashboard-navbar .search-input{
+  border-radius: 8px;
+}
+
+.dashboard-navbar .filter-button i{
+  color: #0A0A0A;
+}
+
+.dashboard-navbar .filter-button{
+  background-color: #FFFFFF;
+  border: 0.91px solid #0000001A;
+    color: #0A0A0A;
+}
+
+.dashboard-navbar .dropdown-menu {
   position: absolute;
   top: 100%;
   right: 0;
 }
 
-.mock {
+.dashboard-navbar {
   overflow: visible;
+  background-color:  #FFFFFF;
+  border-bottom: 0.91px solid #0000001A;
 }
+
+.focus-button{
+  white-space: nowrap;
+}
+
+
 
 

@@ -32,7 +32,7 @@ function WorkInformation() {
               <div className="card p-3 px-4">
                 <div className="card-body">
                   <div className="d-flex align-items-center">
-                    <div className="workInformation-card-icon p-2 d-flex justify-content-center align-items-center me-2">
+                    <div className="p-2 d-flex justify-content-center align-items-center me-2  icon-design">
                       <i className=" fa-solid fa-building fs-5"></i>
                     </div>
                     <span className="lh-1">

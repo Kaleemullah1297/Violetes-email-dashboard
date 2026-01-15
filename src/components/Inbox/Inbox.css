@@ -1,6 +1,8 @@
+
+
 .inbox-component-image{
-    background-color:  rgba(17, 46, 78, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color:  var(--color-primary);
+    color: var(--color-surface-base);
     width: 35px;
     height: 35px;
     border-radius: 50px;
@@ -17,7 +19,7 @@
 .priority{
     background-color:  rgba(212, 24, 61, 1);
     border-radius: 10px;
-    color: rgba(255, 255, 255, 1);
+    color: var(--color-surface-base);
 }
 
 .small-dot{

@@ -35,14 +35,6 @@
   padding: 0.25rem 0;
 }
 
-/* Section titles */
-/* .dropdown-title {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #6c757d;
-  text-transform: uppercase;
-  margin: 0.25rem 0 0.5rem;
-} */
 
 /* Dropdown items */
 .settings-dropdown .dropdown-item {
@@ -87,4 +79,8 @@ body.dark .settings-dropdown .dropdown-item:hover {
 
 .settings-dropdown .form-check-input{
     font-size: 18px;
+}
+
+.gear-icon{
+  color:#0A0A0A;
 }
